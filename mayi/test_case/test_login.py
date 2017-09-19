@@ -8,12 +8,8 @@
 @time: 2017/9/19 14:17
 """
 import unittest,sys
-sys.path.append("./page_boj")
-sys.path.append("./models")
-from page_obj import login_page
-from models import myunit
-# from mayi.test_case.page_obj import login_page
-# from mayi.models import myunit
+from mayi.test_case.page_obj import login_page
+from mayi.models import myunit,function
 from time import sleep
 
 
@@ -28,8 +24,10 @@ class TestLogin(myunit.MyTest):
         po.password(password="18701016443")
         po.imagecode1()
         po.loginbyupdo()
+        sleep(3)
 
         assert po.login_sucess() == "哈哈哈哈哈"
+        function.insert_img(self.driver, "login.png")
 
         print(po.login_sucess())
         sleep(3)
