@@ -42,3 +42,12 @@ class LoginPage(Pyse):
     def login_sucess(self):
         text = self.get_text("id=>head_nickname")
         return text
+
+    def login(self):
+        self.open()
+        self.loginshow()
+        self.changeloginbyup()
+        self.username(username="18701016443")
+        self.password(password="18701016443")
+        self.imagecode1()
+        self.loginbyupdo()

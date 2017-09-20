@@ -15,13 +15,13 @@ from time import sleep
 
 class TestLogin(myunit.MyTest):
     '''登录'''
-    def test_login(self):
+    def test_login(self,username="18701016443",password="18701016443"):
         po = login_page.LoginPage(self.driver)
         po.open()
         po.loginshow()
         po.changeloginbyup()
-        po.username(username="18701016443")
-        po.password(password="18701016443")
+        po.username(username)
+        po.password(password)
         po.imagecode1()
         po.loginbyupdo()
         sleep(3)
