@@ -7,10 +7,9 @@
 @software: PyCharm
 @time: 2017/9/20 17:31
 """
-from mayi.test_case.page_obj import wujiaqu_order_page
+from mayi.test_case.page_obj import wujiaqu_order_page,login_page
 from mayi.models import function,myunit
-from time import  sleep
-from mayi.test_case.test_login import TestLogin
+from time import sleep
 import unittest
 
 class TestWujiaquOrder(myunit.MyTest):
@@ -18,7 +17,7 @@ class TestWujiaquOrder(myunit.MyTest):
 
     def test_wujiaqu_order(self):
         po  = wujiaqu_order_page.WujiaquOrderPage(self.driver)
-        TestLogin.test_login(self)
+        login_page.LoginPage(self.driver).login()
         po._open(url="/wujiaqu/")
 
         po.searchcityin1()

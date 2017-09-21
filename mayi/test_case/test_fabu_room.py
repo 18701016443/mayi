@@ -7,16 +7,15 @@
 @software: PyCharm
 @time: 2017/9/20 11:10
 """
-from mayi.test_case.page_obj import fabu_room_page
+from mayi.test_case.page_obj import fabu_room_page,login_page
 from mayi.models import myunit,function
-from mayi.test_case.test_login import TestLogin
 import unittest
 from time import sleep
 
 class TestFabuRoom(myunit.MyTest):
     '''发布房源'''
     def test_fabu_room(self):
-        TestLogin.test_login(self)
+        login_page.LoginPage(self.driver).login()
         po = fabu_room_page.FabuRoomPage(self.driver)
         po.fabu_room()
         sleep(2)
