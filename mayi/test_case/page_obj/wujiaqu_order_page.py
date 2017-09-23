@@ -44,6 +44,7 @@ class WujiaquOrderPage(Pyse):
     #入住人姓名
     def tenantname(self):
         tenantname = mydef.rad_word(5)
+        self.clear("id=>tenantname")
         self.type("id=>tenantname",tenantname)
 
     #保险联系人

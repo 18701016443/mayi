@@ -21,3 +21,9 @@ def rad_word(num):
     characters = string.ascii_letters + string.digits
     rad_word = "".join(choice(characters) for x in range(num))
     return rad_word
+
+#产生随机字母
+def rad_only_word(num):
+    characters = string.ascii_letters
+    rad_word = "".join(choice(characters) for x in range(num))
+    return rad_word

@@ -29,6 +29,10 @@ class LandlordNavPage(Pyse):
     def msgmanager(self):
         self.click("xpath=>/html/body/div[13]/div[5]/ul/li[3]/a")
 
+    #结算管理
+    def settlements(self):
+        self.click("xpath=>/html/body/div[13]/div[5]/ul/li[4]/a")
+
     #房东微店
     def microshopmanager(self):
         self.click("xpath=>/html/body/div[13]/div[5]/ul/li[5]/a")

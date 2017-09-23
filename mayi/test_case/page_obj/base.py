@@ -10,7 +10,7 @@ class Pyse(object):
     PO模型基本类，对原生Selenium进行二次封装。
     '''
 
-    def __init__(self, selenium_driver, base_url='http://pre.mayi.com'):
+    def __init__(self, selenium_driver, base_url='http://www.mayi.com'):
         self.driver = selenium_driver
         self.base_url = base_url
         self.timeout = 30

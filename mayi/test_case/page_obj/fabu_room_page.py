@@ -222,6 +222,7 @@ class FabuRoomPage(Pyse):
         self.click("xpath=>//*[@id='weekendtype']/option["+num+"]")
         if num !=1:
             weekendprice = mydef.rad_num(60,9999)
+            self.clear("id=>weekendprice")
             self.type("id=>weekendprice",weekendprice)
 
     #入住满7天
@@ -281,7 +282,7 @@ class FabuRoomPage(Pyse):
         cook_more=mydef.rad_word(5)
         self.type("id=>cook_more",cook_more)
 
-    #q清洁费
+    #清洁费
     def upto(self):
         num = mydef.rad_num(1,3)
         self.click("xpath=>//*[@id='upto']/option["+num+"]")
