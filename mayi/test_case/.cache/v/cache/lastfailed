@@ -1,0 +1,6 @@
+{
+  "test_landlord_read.py::TestLandlordRead::test_privacypolicy": true,
+  "test_login.py": true,
+  "test_login.py::TestLogin": true,
+  "test_tenant_account.py::TestTenantAccount::test_tenant_account": true
+}

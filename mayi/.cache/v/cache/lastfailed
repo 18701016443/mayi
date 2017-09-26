@@ -1,0 +1,4 @@
+{
+  "test_case/test_wujiaqu_order.py::TestLogin": true,
+  "test_case/test_wujiaqu_order.py::TestWujiaquOrder": true
+}
