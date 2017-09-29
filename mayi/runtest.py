@@ -27,7 +27,7 @@ def send_mail(file_new):
     att["Content-Type"] = "application/octet-stream"
     file_name = file_new.split("./report/")[1]
     print(file_name)
-    att["Content-Disposition"] = "attachment;filename="+file_name+""
+    att["Content-Disposition"] = "attachment;filename="+file_name
     msgRoot = MIMEMultipart("related")
     msgRoot["Subject"] = "自动化测试报告"
     #邮件正文
@@ -37,6 +37,9 @@ def send_mail(file_new):
 
     msgRoot["From"] = "18701016443@163.com"
     msgRoot["To"] = "zhangjiaheng_dz@mayi.com"
+    # msgRoot["From"] = "bxj3416162@163.com"
+    # msgRoot["To"] = "buxiangjie@huirendai.net"
+
 
     smtp = smtplib.SMTP()
     smtp.connect("smtp.163.com")

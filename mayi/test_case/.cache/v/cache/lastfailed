@@ -1,5 +1,8 @@
 {
+  "test_landlord_read.py::TestLandlordRead::test_agreement": true,
   "test_landlord_read.py::TestLandlordRead::test_privacypolicy": true,
+  "test_landlord_read.py::TestLandlordRead::test_roomauditrule": true,
+  "test_landlord_read.py::TestLandlordRead::test_tenant_rule": true,
   "test_login.py": true,
   "test_login.py::TestLogin": true,
   "test_tenant_account.py::TestTenantAccount::test_tenant_account": true
