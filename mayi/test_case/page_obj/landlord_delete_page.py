@@ -32,13 +32,14 @@ class LandlordDeletePage(Pyse):
 
     #已上线/已下线——房源删除
     def room_delete(self):
-        self.click("xpath=>html/body/div[13]/div[5]/div/div/div[1]/div[1]/div[2]/div[5]/ul/li[2]/a")
+        self.click("xpath=>html/body/div[14]/div[5]/div/div/div[1]/div[1]/div[2]/div[5]/ul/li[2]/a")
     #审核中/未通过——房源删除
     def checking_delete(self):
-        self.click("xpath=>html/body/div[13]/div[5]/div/div/div[1]/div[1]/div[2]/div[5]/ul/li[3]/a")
+        self.click("xpath=>html/body/div[14]/div[5]/div/div/div[1]/div[1]/div[2]/div[5]/ul/li[3]/a")
+
     #待完善——房源删除
     def need_complete_delete(self):
-        self.click("xpath=>html/body/div[13]/div[5]/div/div/div[1]/div[1]/div[2]/div[5]/ul/li[2]/a")
+        self.click("xpath=>html/body/div[14]/div[5]/div/div/div[1]/div[1]/div[2]/div[5]/ul/li[2]/a")
 
     #删除房源弹窗-确定
     def delBtn(self):
@@ -52,13 +53,13 @@ class LandlordDeletePage(Pyse):
     def okDelSuccessBtn(self):
         self.click("id=>okDelSuccessBtn")
 
-    #已上线/已下线/未通过/待完善——删除房源成功文案
+    #已上线/已下线/未通过/待完善/审核中——删除房源成功文案
     def delsuccess_text(self):
-        text = self.get_text("xpath=>html/body/div[24]/div/div/div/div[2]/div[1]")
+        text = self.get_text("xpath=>html/body/div[25]/div/div/div/div[2]/div[1]")
         return text
 
-    #审核中——删除房源成功文案
-    def checking_delsuccess_text(self):
-        text = self.get_text("xpath=>html/body/div[15]/div/div/div/div[2]/div[2]/input")
-        return text
+    # #审核中——删除房源成功文案
+    # def checking_delsuccess_text(self):
+    #     text = self.get_text("xpath=>html/body/div[25]/div/div/div/div[2]/div[1]")
+    #     return text
 

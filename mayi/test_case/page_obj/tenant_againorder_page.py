@@ -14,7 +14,7 @@ class TenantAgainorderPage(Pyse):
 
     #重新下定单
     def againorder(self):
-        self.click("xpath=>/html/body/div[13]/div[1]/div/div[1]/div/div[4]/div[2]/div[6]/p/a")
+        self.click("xpath=>/html/body/div[14]/div[1]/div/div[1]/div/div[4]/div[2]/div[6]/p/a")
 
 
 

@@ -393,3 +393,17 @@ class Pyse(object):
         for handle in all_handles:
             if handle != original_windows:
                 self.driver._switch_to.window(handle)
+
+
+    def is_element_exist(self,css):
+        '''
+        先检验元素是否存在，若存在则利用js把div删除，方便定位后面的元素。
+        若没有这个元素，则可以直接运行后面的元素。
+        '''
+        try:
+            e = self.get_element(css)
+            self.js("var rm=document.getElementById('roomform').removeChild(document.getElementById('roomform').children[5])")
+
+        except:
+            m = print("没有此div")
+            return m

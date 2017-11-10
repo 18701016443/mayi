@@ -14,5 +14,5 @@ class LandlordWeixinPage(Pyse):
 
     #房东微信文案
     def weixin_text(self):
-        text = self.get_text("xpath=>/html/body/div[13]/div[5]/div/h3")
+        text = self.get_text("xpath=>/html/body/div[14]/div[5]/div/h3")
         return text

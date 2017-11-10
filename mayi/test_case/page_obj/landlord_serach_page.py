@@ -18,13 +18,15 @@ class LandlordSerachPage(Pyse):
 
     #入住开始时间
     def beginCheckInDay(self):
-        self.js("document.getElementById('beginCheckInDay').readOnly=false;")
+        #利用js移除readonly属性，两种方法都可以
+        # self.js("document.getElementById('beginCheckInDay').readOnly=false;")
+        self.js("document.getElementById('beginCheckInDay').removeAttribute('readonly');")
         beginCheckInDay =datetime.datetime.now().strftime("%Y-%m-%d")
         self.type("id=>beginCheckInDay",beginCheckInDay)
 
     #入住结束时间
     def endCheckInDay(self):
-        self.js("document.getElementById('endCheckInDay').readOnly=false;")
+        self.js("document.getElementById('endCheckInDay').removeAttribute('readonly');")
         endCheckInDay =(datetime.datetime.now()+datetime.timedelta(days=1)).strftime("%Y-%m-%d")
         self.type("id=>endCheckInDay",endCheckInDay)
 
@@ -36,4 +38,4 @@ class LandlordSerachPage(Pyse):
 
     #搜索
     def serach(self):
-        self.click("xpath=>/html/body/div[13]/div[5]/div/div[1]/div[2]/input[2]")
+        self.click("xpath=>/html/body/div[14]/div[5]/div/div[1]/div[2]/input[2]")

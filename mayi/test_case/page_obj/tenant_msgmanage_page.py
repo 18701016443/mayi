@@ -15,10 +15,10 @@ class TenantMsganagePage(Pyse):
 
     #回复
     def return_msg(self):
-        self.click("xpath=>html/body/div[13]/div/div/div/div/div[1]/div[2]/ul/li[2]/span/span/a")
+        self.click("xpath=>html/body/div[14]/div/div/div/div/div[1]/div[2]/ul/li[2]/span/span/a")
 
     # 查看
     def look(self):
-        self.click("xpath=>html/body/div[13]/div/div/div/div/div[1]/div[2]/ul/li[1]/a")
+        self.click("xpath=>html/body/div[14]/div/div/div/div/div[1]/div[2]/ul/li[1]/a")
 
 

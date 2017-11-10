@@ -31,7 +31,7 @@ class LandlordReadPage(Pyse):
 
     #服务器协议文案
     def agreement_text(self):
-        text = self.get_text("xpath=>/html/body/div[13]")
+        text = self.get_text("xpath=>/html/body/div[14]")
         return text
 
     #隐私条款

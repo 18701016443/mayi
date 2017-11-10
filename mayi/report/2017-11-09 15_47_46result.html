@@ -1,0 +1,2888 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>蚂蚁PC自动化测试报告</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         { }
+
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+	font-size: 16pt;
+	color: gray;
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+
+/* -- css div popup ------------------------------------------------------------------------ */
+a.popup_link {
+}
+
+a.popup_link:hover {
+    color: red;
+}
+
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    background-color: #E6E6D6;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 8pt;
+    width: 500px;
+}
+
+}
+/* -- report ------------------------------------------------------------------------ */
+#show_detail_line {
+    margin-top: 3ex;
+    margin-bottom: 1ex;
+}
+#result_table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #777;
+}
+#header_row {
+    font-weight: bold;
+    color: white;
+    background-color: #777;
+}
+#result_table td {
+    border: 1px solid #777;
+    padding: 2px;
+}
+#total_row  { font-weight: bold; }
+.passClass  { background-color: #6c6; }
+.failClass  { background-color: #c60; }
+.errorClass { background-color: #c00; }
+.passCase   { color: #6c6; }
+.failCase   { color: #c60; font-weight: bold; }
+.errorCase  { color: #c00; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
+
+</style>
+
+</head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+--></script>
+
+<div class='heading'>
+<h1>蚂蚁PC自动化测试报告</h1>
+<p class='attribute'><strong>Start Time:</strong> 2017-11-09 15:47:46</p>
+<p class='attribute'><strong>Duration:</strong> 1:20:10.406650</p>
+<p class='attribute'><strong>Status:</strong> Pass 52 Failure 1 Error 22</p>
+
+<p class='description'>环境 win10  浏览器：谷歌/59版</p>
+</div>
+
+
+
+<p id='show_detail_line'>Show
+<a href='javascript:showCase(0)'>Summary</a>
+<a href='javascript:showCase(1)'>Failed</a>
+<a href='javascript:showCase(2)'>All</a>
+</p>
+<table id='result_table'>
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row'>
+    <td>Test Group/Test case</td>
+    <td>Count</td>
+    <td>Pass</td>
+    <td>Fail</td>
+    <td>Error</td>
+    <td>View</td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_fabu_room.TestFabuRoom: 发布房源</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
+</tr>
+
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_fabu_room</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        pass</a>
+
+    <div id='div_pt1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.1: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_landlord_accountmanager.TestAccountmanager: 房东个人信息</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c2',1)">Detail</a></td>
+</tr>
+
+<tr id='pt2.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_account: 修改房东信息</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_landlord_activity.TestActivity: 活动设置</td>
+    <td>2</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c3',2)">Detail</a></td>
+</tr>
+
+<tr id='pt3.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_active_good: 活动好处</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.1')" >
+        pass</a>
+
+    <div id='div_pt3.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt3.1: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt3.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_regular_desc: 活动规则</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.2')" >
+        pass</a>
+
+    <div id='div_pt3.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt3.2: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_landlord_alias.TestAlias: 房源别名</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c4',1)">Detail</a></td>
+</tr>
+
+<tr id='ft4.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_alias</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.1')" >
+        error</a>
+
+    <div id='div_ft4.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft4.1: Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_landlord_alias.py", line 19, in test_alias
+    login_page.LoginPage(self.driver).login()
+  File "D:\python\mayi\test_case\page_obj\login_page.py", line 52, in login
+    self.imagecode1()
+  File "D:\python\mayi\test_case\page_obj\login_page.py", line 34, in imagecode1
+    self.click("id=&gt;imagecode1")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 167, in click
+    el.click()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 78, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 499, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotVisibleException: Message: element not visible
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_landlord_alias.py", line 19, in test_alias
+    login_page.LoginPage(self.driver).login()
+  File "D:\python\mayi\test_case\page_obj\login_page.py", line 52, in login
+    self.imagecode1()
+  File "D:\python\mayi\test_case\page_obj\login_page.py", line 34, in imagecode1
+    self.click("id=&gt;imagecode1")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 167, in click
+    el.click()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 78, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 499, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotVisibleException: Message: element not visible
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_landlord_confirm.TestLandlordConfiem: 待确认订单</td>
+    <td>7</td>
+    <td>6</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c5',7)">Detail</a></td>
+</tr>
+
+<tr id='pt5.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_cancel: 确认订单-以后再说</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt5.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_confirm: 确认订单</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt5.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_order_details_confirm: 订单详情页-确认订单</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt5.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_order_details_refuse: 订单详情页-拒绝</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='ft5.5' class='none'>
+    <td class='errorCase'><div class='testcase'>test_refuse: 拒绝订单</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.5')" >
+        error</a>
+
+    <div id='div_ft5.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft5.5: Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_landlord_confirm.py", line 58, in test_refuse
+    po.refuse_reason()
+  File "D:\python\mayi\test_case\page_obj\landlord_confirm_page.py", line 39, in refuse_reason
+    self.click("xpath=&gt;html/body/div[17]/div[2]/div[2]/form/label["+ mydef.rad_num(1,9) +"]")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 167, in click
+    el.click()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 78, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 499, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotVisibleException: Message: element not visible
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_landlord_confirm.py", line 58, in test_refuse
+    po.refuse_reason()
+  File "D:\python\mayi\test_case\page_obj\landlord_confirm_page.py", line 39, in refuse_reason
+    self.click("xpath=&gt;html/body/div[17]/div[2]/div[2]/form/label["+ mydef.rad_num(1,9) +"]")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 167, in click
+    el.click()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 78, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 499, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotVisibleException: Message: element not visible
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt5.6' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_refuse_cancel: 拒绝-取消按钮</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt5.7' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_return_myorder: 订单详情页-返回我的订单</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_landlord_delete.TestDelete: 房源删除</td>
+    <td>5</td>
+    <td>2</td>
+    <td>0</td>
+    <td>3</td>
+    <td><a href="javascript:showClassDetail('c6',5)">Detail</a></td>
+</tr>
+
+<tr id='pt6.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_checkingroom_delete: 审核中——删除房源</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt6.1')" >
+        pass</a>
+
+    <div id='div_pt6.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt6.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt6.1: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft6.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_need_complete_delete: 待完善——删除房源</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft6.2')" >
+        error</a>
+
+    <div id='div_ft6.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft6.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft6.2: Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_landlord_delete.py", line 115, in test_need_complete_delete
+    po.need_complete_delete()
+  File "D:\python\mayi\test_case\page_obj\landlord_delete_page.py", line 42, in need_complete_delete
+    self.click("xpath=&gt;html/body/div[14]/div[5]/div/div/div[1]/div[1]/div[2]/div[5]/ul/li[2]/a")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 167, in click
+    el.click()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 78, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 499, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_landlord_delete.py", line 115, in test_need_complete_delete
+    po.need_complete_delete()
+  File "D:\python\mayi\test_case\page_obj\landlord_delete_page.py", line 42, in need_complete_delete
+    self.click("xpath=&gt;html/body/div[14]/div[5]/div/div/div[1]/div[1]/div[2]/div[5]/ul/li[2]/a")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 167, in click
+    el.click()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 78, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 499, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft6.3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_nopassroom_delete: 未通过——删除房源</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft6.3')" >
+        error</a>
+
+    <div id='div_ft6.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft6.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft6.3: Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_landlord_delete.py", line 94, in test_nopassroom_delete
+    po.checking_delete()
+  File "D:\python\mayi\test_case\page_obj\landlord_delete_page.py", line 38, in checking_delete
+    self.click("xpath=&gt;html/body/div[14]/div[5]/div/div/div[1]/div[1]/div[2]/div[5]/ul/li[3]/a")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 167, in click
+    el.click()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 78, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 499, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_landlord_delete.py", line 94, in test_nopassroom_delete
+    po.checking_delete()
+  File "D:\python\mayi\test_case\page_obj\landlord_delete_page.py", line 38, in checking_delete
+    self.click("xpath=&gt;html/body/div[14]/div[5]/div/div/div[1]/div[1]/div[2]/div[5]/ul/li[3]/a")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 167, in click
+    el.click()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 78, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 499, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft6.4' class='none'>
+    <td class='errorCase'><div class='testcase'>test_offlineroom_delete: 已下线——删除房源</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft6.4')" >
+        error</a>
+
+    <div id='div_ft6.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft6.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft6.4: Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_landlord_delete.py", line 50, in test_offlineroom_delete
+    po.room_delete()
+  File "D:\python\mayi\test_case\page_obj\landlord_delete_page.py", line 35, in room_delete
+    self.click("xpath=&gt;html/body/div[14]/div[5]/div/div/div[1]/div[1]/div[2]/div[5]/ul/li[2]/a")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 167, in click
+    el.click()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 78, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 499, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_landlord_delete.py", line 50, in test_offlineroom_delete
+    po.room_delete()
+  File "D:\python\mayi\test_case\page_obj\landlord_delete_page.py", line 35, in room_delete
+    self.click("xpath=&gt;html/body/div[14]/div[5]/div/div/div[1]/div[1]/div[2]/div[5]/ul/li[2]/a")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 167, in click
+    el.click()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 78, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 499, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt6.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_room_delete: 已上线——删除房源</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt6.5')" >
+        pass</a>
+
+    <div id='div_pt6.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt6.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt6.5: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_landlord_editprice.TestLandlordEditprice: 审核中-修改价格</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c7',1)">Detail</a></td>
+</tr>
+
+<tr id='ft7.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_editprice</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft7.1')" >
+        error</a>
+
+    <div id='div_ft7.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft7.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft7.1: Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_landlord_editprice.py", line 35, in test_editprice
+    fb.weekendtype()
+  File "D:\python\mayi\test_case\page_obj\fabu_room_page.py", line 225, in weekendtype
+    self.clear("id=&gt;weekendprice")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 156, in clear
+    el.clear()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 93, in clear
+    self._execute(Command.CLEAR_ELEMENT)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 499, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidElementStateException: Message: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_landlord_editprice.py", line 35, in test_editprice
+    fb.weekendtype()
+  File "D:\python\mayi\test_case\page_obj\fabu_room_page.py", line 225, in weekendtype
+    self.clear("id=&gt;weekendprice")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 156, in clear
+    el.clear()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 93, in clear
+    self._execute(Command.CLEAR_ELEMENT)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 499, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidElementStateException: Message: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_landlord_experience.TestExperience: 特色体验</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c8',1)">Detail</a></td>
+</tr>
+
+<tr id='pt8.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_new_tsty</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt8.1')" >
+        pass</a>
+
+    <div id='div_pt8.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt8.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt8.1: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_landlord_forum.TestForum: 房东讲堂</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c9',1)">Detail</a></td>
+</tr>
+
+<tr id='pt9.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_forum: 房东讲堂文案及截图</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt9.1')" >
+        pass</a>
+
+    <div id='div_pt9.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt9.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt9.1: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_landlord_invalid.TestInvalid: 失效订单</td>
+    <td>2</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c10',2)">Detail</a></td>
+</tr>
+
+<tr id='pt10.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_order_status: 进入订单详情页并打印状态</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt10.1')" >
+        pass</a>
+
+    <div id='div_pt10.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt10.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt10.1: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt10.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_return_myorder: 返回我的订单并打印第一个订单的状态</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt10.2')" >
+        pass</a>
+
+    <div id='div_pt10.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt10.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt10.2: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_landlord_manageStandard.TestManageStandard: 管理规范</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c11',1)">Detail</a></td>
+</tr>
+
+<tr id='pt11.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_managestandard: 管理规范的文案及截图</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt11.1')" >
+        pass</a>
+
+    <div id='div_pt11.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt11.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt11.1: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_landlord_microshop.TestMicroshop: 微店订单</td>
+    <td>2</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c12',2)">Detail</a></td>
+</tr>
+
+<tr id='pt12.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_microshop_return_myorder: 返回我的订单并打印第一个状态</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt12.1')" >
+        pass</a>
+
+    <div id='div_pt12.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt12.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt12.1: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt12.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_microshop_status: 进入订单详情页并打印状态</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt12.2')" >
+        pass</a>
+
+    <div id='div_pt12.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt12.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt12.2: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_landlord_microshopmanager.TestMicroshopManager: 房东微店</td>
+    <td>2</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c13',2)">Detail</a></td>
+</tr>
+
+<tr id='pt13.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_edit_weidian: 编辑微店，更改微店名称和微店介绍</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='ft13.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_view_again: 查看房东说明</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft13.2')" >
+        error</a>
+
+    <div id='div_ft13.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft13.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft13.2: Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_landlord_microshopmanager.py", line 42, in test_view_again
+    login_page.LoginPage(self.driver).login()
+  File "D:\python\mayi\test_case\page_obj\login_page.py", line 48, in login
+    self.loginshow()
+  File "D:\python\mayi\test_case\page_obj\login_page.py", line 18, in loginshow
+    self.click("xpath=&gt;//*[@id='loginshow']")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 165, in click
+    self.element_wait(css)
+  File "D:\python\mayi\test_case\page_obj\base.py", line 69, in element_wait
+    WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.XPATH, value)))
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_landlord_microshopmanager.py", line 42, in test_view_again
+    login_page.LoginPage(self.driver).login()
+  File "D:\python\mayi\test_case\page_obj\login_page.py", line 48, in login
+    self.loginshow()
+  File "D:\python\mayi\test_case\page_obj\login_page.py", line 18, in loginshow
+    self.click("xpath=&gt;//*[@id='loginshow']")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 165, in click
+    self.element_wait(css)
+  File "D:\python\mayi\test_case\page_obj\base.py", line 69, in element_wait
+    WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.XPATH, value)))
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_landlord_msg.TestLandlordMsg: 消息回复</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td>2</td>
+    <td><a href="javascript:showClassDetail('c14',2)">Detail</a></td>
+</tr>
+
+<tr id='ft14.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_msg: 房东回复房客</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft14.1')" >
+        error</a>
+
+    <div id='div_ft14.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft14.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft14.1: Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_landlord_msg.py", line 19, in test_msg
+    login_page.LoginPage(self.driver).login()
+  File "D:\python\mayi\test_case\page_obj\login_page.py", line 48, in login
+    self.loginshow()
+  File "D:\python\mayi\test_case\page_obj\login_page.py", line 18, in loginshow
+    self.click("xpath=&gt;//*[@id='loginshow']")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 165, in click
+    self.element_wait(css)
+  File "D:\python\mayi\test_case\page_obj\base.py", line 69, in element_wait
+    WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.XPATH, value)))
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_landlord_msg.py", line 19, in test_msg
+    login_page.LoginPage(self.driver).login()
+  File "D:\python\mayi\test_case\page_obj\login_page.py", line 48, in login
+    self.loginshow()
+  File "D:\python\mayi\test_case\page_obj\login_page.py", line 18, in loginshow
+    self.click("xpath=&gt;//*[@id='loginshow']")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 165, in click
+    self.element_wait(css)
+  File "D:\python\mayi\test_case\page_obj\base.py", line 69, in element_wait
+    WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.XPATH, value)))
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft14.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_msg_record: 打印聊天记录</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft14.2')" >
+        error</a>
+
+    <div id='div_ft14.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft14.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft14.2: Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_landlord_msg.py", line 39, in test_msg_record
+    login_page.LoginPage(self.driver).login()
+  File "D:\python\mayi\test_case\page_obj\login_page.py", line 48, in login
+    self.loginshow()
+  File "D:\python\mayi\test_case\page_obj\login_page.py", line 18, in loginshow
+    self.click("xpath=&gt;//*[@id='loginshow']")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 165, in click
+    self.element_wait(css)
+  File "D:\python\mayi\test_case\page_obj\base.py", line 69, in element_wait
+    WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.XPATH, value)))
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_landlord_msg.py", line 39, in test_msg_record
+    login_page.LoginPage(self.driver).login()
+  File "D:\python\mayi\test_case\page_obj\login_page.py", line 48, in login
+    self.loginshow()
+  File "D:\python\mayi\test_case\page_obj\login_page.py", line 18, in loginshow
+    self.click("xpath=&gt;//*[@id='loginshow']")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 165, in click
+    self.element_wait(css)
+  File "D:\python\mayi\test_case\page_obj\base.py", line 69, in element_wait
+    WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.XPATH, value)))
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_landlord_offline.TestOffline: 房源下线</td>
+    <td>3</td>
+    <td>2</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c15',3)">Detail</a></td>
+</tr>
+
+<tr id='ft15.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_gopriceCal: 房源下线（去价格房态）——下线原因：我想休息，暂停出租</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft15.1')" >
+        error</a>
+
+    <div id='div_ft15.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft15.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft15.1: Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_landlord_offline.py", line 67, in test_gopriceCal
+    landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
+  File "D:\python\mayi\test_case\page_obj\landlord_nav_page.py", line 18, in Iamlandlord
+    self.click("xpath=&gt;/html/body/div[1]/div/ul/li[3]/div/a")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 167, in click
+    el.click()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 78, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 499, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element &lt;a href="/activity/app50" rel="nofollow" target="_blank" _mayi_rp="webaround|activity|firstorder"&gt;...&lt;/a&gt; is not clickable at point (1062, 31). Other element would receive the click: &lt;div times="1" id="xubox_shade1" class="xubox_shade" style="z-index:19891015; background-color:#000; opacity:0.3; filter:alpha(opacity=30);"&gt;&lt;/div&gt;
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_landlord_offline.py", line 67, in test_gopriceCal
+    landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
+  File "D:\python\mayi\test_case\page_obj\landlord_nav_page.py", line 18, in Iamlandlord
+    self.click("xpath=&gt;/html/body/div[1]/div/ul/li[3]/div/a")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 167, in click
+    el.click()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 78, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 499, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element &lt;a href="/activity/app50" rel="nofollow" target="_blank" _mayi_rp="webaround|activity|firstorder"&gt;...&lt;/a&gt; is not clickable at point (1062, 31). Other element would receive the click: &lt;div times="1" id="xubox_shade1" class="xubox_shade" style="z-index:19891015; background-color:#000; opacity:0.3; filter:alpha(opacity=30);"&gt;&lt;/div&gt;
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt15.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_offline: 房源下线——下线原因：我想休息，暂停出租</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt15.2')" >
+        pass</a>
+
+    <div id='div_pt15.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt15.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt15.2: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt15.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_room_offline: 房源下线——下线原因：非我想休息，暂停出租</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt15.3')" >
+        pass</a>
+
+    <div id='div_pt15.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt15.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt15.3: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_landlord_online.TestOnline: 已下线-房源上线</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c16',1)">Detail</a></td>
+</tr>
+
+<tr id='pt16.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_room_online: 房源上线</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt16.1')" >
+        pass</a>
+
+    <div id='div_pt16.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt16.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt16.1: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_landlord_online_editdata.TestLandlordOnlineEditdata: 已上线——房源信息</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c17',1)">Detail</a></td>
+</tr>
+
+<tr id='pt17.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_edit_fydes: 修改房源信息</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt17.1')" >
+        pass</a>
+
+    <div id='div_pt17.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt17.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt17.1: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_landlord_read.TestLandlordRead: 房源管理-房东必读</td>
+    <td>5</td>
+    <td>5</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c18',5)">Detail</a></td>
+</tr>
+
+<tr id='pt18.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_agreement: 服务协议</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt18.1')" >
+        pass</a>
+
+    <div id='div_pt18.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt18.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt18.1: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt18.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_landlord_read: 房东规则</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt18.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_privacypolicy: 隐私条款</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt18.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_roomauditrule: 房间审核规范</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt18.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_tenant_rule: 房客规则</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_landlord_refund.TestRefund: 退款订单</td>
+    <td>2</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c19',2)">Detail</a></td>
+</tr>
+
+<tr id='pt19.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_order_status: 进入订单详情页并打印状态</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt19.1')" >
+        pass</a>
+
+    <div id='div_pt19.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt19.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt19.1: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt19.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_return_myorder: 返回我的订单并打印第一个订单的状态</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt19.2')" >
+        pass</a>
+
+    <div id='div_pt19.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt19.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt19.2: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_landlord_roomsearch.TestRoomsearch: 结算管理</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c20',1)">Detail</a></td>
+</tr>
+
+<tr id='pt20.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_roomsearch: 按房间名搜索</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_landlord_serach.TestLandlordSerach: 搜索</td>
+    <td>2</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c21',2)">Detail</a></td>
+</tr>
+
+<tr id='pt21.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_date_serach: 按日期搜索</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt21.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_orderid_or_phone: 按手机号或订单号搜索</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_landlord_waitingcheckin.TestWaitingcheckin: 待入住订单</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td>2</td>
+    <td><a href="javascript:showClassDetail('c22',2)">Detail</a></td>
+</tr>
+
+<tr id='ft22.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_return_myorder: 从订单详情页返回到我的订单列表</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft22.1')" >
+        error</a>
+
+    <div id='div_ft22.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft22.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft22.1: Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_landlord_waitingcheckin.py", line 43, in test_return_myorder
+    po.wait_order_details()
+  File "D:\python\mayi\test_case\page_obj\landlord_waitingcheckin_page.py", line 28, in wait_order_details
+    self.click("xpath=&gt;/html/body/div[14]/div[5]/div/div[2]/div/div/div[2]/div[5]/p[2]/a")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 165, in click
+    self.element_wait(css)
+  File "D:\python\mayi\test_case\page_obj\base.py", line 69, in element_wait
+    WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.XPATH, value)))
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_landlord_waitingcheckin.py", line 43, in test_return_myorder
+    po.wait_order_details()
+  File "D:\python\mayi\test_case\page_obj\landlord_waitingcheckin_page.py", line 28, in wait_order_details
+    self.click("xpath=&gt;/html/body/div[14]/div[5]/div/div[2]/div/div/div[2]/div[5]/p[2]/a")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 165, in click
+    self.element_wait(css)
+  File "D:\python\mayi\test_case\page_obj\base.py", line 69, in element_wait
+    WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.XPATH, value)))
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft22.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_status: 进入订单详情页的并打印状态</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft22.2')" >
+        error</a>
+
+    <div id='div_ft22.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft22.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft22.2: Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_landlord_waitingcheckin.py", line 24, in test_status
+    landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
+  File "D:\python\mayi\test_case\page_obj\landlord_nav_page.py", line 22, in close_weiChat
+    self.click("xpath=&gt;/html/body/div[14]/div[2]/div[2]/img[1]")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 167, in click
+    el.click()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 78, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 499, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotVisibleException: Message: element not visible
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_landlord_waitingcheckin.py", line 24, in test_status
+    landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
+  File "D:\python\mayi\test_case\page_obj\landlord_nav_page.py", line 22, in close_weiChat
+    self.click("xpath=&gt;/html/body/div[14]/div[2]/div[2]/img[1]")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 167, in click
+    el.click()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 78, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 499, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotVisibleException: Message: element not visible
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_landlord_weixin.TestWeixin: 房东微信</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c23',1)">Detail</a></td>
+</tr>
+
+<tr id='ft23.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_weixin: 房东微信</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft23.1')" >
+        error</a>
+
+    <div id='div_ft23.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft23.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft23.1: Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_landlord_weixin.py", line 21, in test_weixin
+    landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
+  File "D:\python\mayi\test_case\page_obj\landlord_nav_page.py", line 18, in Iamlandlord
+    self.click("xpath=&gt;/html/body/div[1]/div/ul/li[3]/div/a")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 167, in click
+    el.click()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 78, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 499, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element &lt;a href="/activity/app50" rel="nofollow" target="_blank" _mayi_rp="webaround|activity|firstorder"&gt;...&lt;/a&gt; is not clickable at point (1062, 31). Other element would receive the click: &lt;div times="1" id="xubox_shade1" class="xubox_shade" style="z-index:19891015; background-color:#000; opacity:0.3; filter:alpha(opacity=30);"&gt;&lt;/div&gt;
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_landlord_weixin.py", line 21, in test_weixin
+    landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
+  File "D:\python\mayi\test_case\page_obj\landlord_nav_page.py", line 18, in Iamlandlord
+    self.click("xpath=&gt;/html/body/div[1]/div/ul/li[3]/div/a")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 167, in click
+    el.click()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 78, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 499, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element &lt;a href="/activity/app50" rel="nofollow" target="_blank" _mayi_rp="webaround|activity|firstorder"&gt;...&lt;/a&gt; is not clickable at point (1062, 31). Other element would receive the click: &lt;div times="1" id="xubox_shade1" class="xubox_shade" style="z-index:19891015; background-color:#000; opacity:0.3; filter:alpha(opacity=30);"&gt;&lt;/div&gt;
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='failClass'>
+    <td>test_login.TestLogin: 登录</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c24',1)">Detail</a></td>
+</tr>
+
+<tr id='ft24.1' class='none'>
+    <td class='failCase'><div class='testcase'>test_login</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft24.1')" >
+        fail</a>
+
+    <div id='div_ft24.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft24.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft24.1: Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_login.py", line 29, in test_login
+    assert po.login_sucess() == "哈哈哈哈哈"
+AssertionError
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_login.py", line 29, in test_login
+    assert po.login_sucess() == "哈哈哈哈哈"
+AssertionError
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_mayiQR.TestQR: 二维码解析</td>
+    <td>17</td>
+    <td>17</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c25',17)">Detail</a></td>
+</tr>
+
+<tr id='pt25.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_APP50_QR: ①APP50下载页面的二维码</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt25.1')" >
+        pass</a>
+
+    <div id='div_pt25.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt25.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt25.1: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt25.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_APP50_andriodbtn: ②APP50下载页面的Android下载按钮</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt25.2')" >
+        pass</a>
+
+    <div id='div_pt25.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt25.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt25.2: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt25.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_Androiddown_btn: ③首页底部Android下载按钮</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt25.3')" >
+        pass</a>
+
+    <div id='div_pt25.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt25.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt25.3: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt25.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_bottom_QR: ④首页底部二维码</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt25.4')" >
+        pass</a>
+
+    <div id='div_pt25.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt25.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt25.4: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt25.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_bottom_left_Andriodbtn: ⑤下载蚂蚁短租客户端手机注册立送5元——Android下载按钮</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt25.5')" >
+        pass</a>
+
+    <div id='div_pt25.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt25.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt25.5: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt25.6' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_bottom_left_QR: ⑥下载蚂蚁短租客户端手机注册立送5元——二维码</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt25.6')" >
+        pass</a>
+
+    <div id='div_pt25.6' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt25.6').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt25.6: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt25.7' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_index_rigit_QR: ⑦首页右侧保洁合作下面——APP首单立减5元——二维码</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt25.7')" >
+        pass</a>
+
+    <div id='div_pt25.7' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt25.7').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt25.7: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt25.8' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_landlord_index: ⑧房东主页下载app</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt25.8')" >
+        pass</a>
+
+    <div id='div_pt25.8' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt25.8').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt25.8: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt25.9' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_landlord_zhaomu_QR: ⑨PC房东招募的二维码</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt25.9')" >
+        pass</a>
+
+    <div id='div_pt25.9' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt25.9').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt25.9: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt25.10' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_msg_QR: ⑩IM聊天的二维码</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt25.10')" >
+        pass</a>
+
+    <div id='div_pt25.10' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt25.10').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt25.10: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt25.11' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_nav_QR: 11首页导航——APP首单立减5元——二维码</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt25.11')" >
+        pass</a>
+
+    <div id='div_pt25.11' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt25.11').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt25.11: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt25.12' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_order_banner_QR: 12房东我的订单banner图第一张——二维码</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt25.12')" >
+        pass</a>
+
+    <div id='div_pt25.12' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt25.12').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt25.12: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt25.13' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_order_call_QR: 13下单页——拨打电话——二维码</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt25.13')" >
+        pass</a>
+
+    <div id='div_pt25.13' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt25.13').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt25.13: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt25.14' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_tenant_order_QR: 14房客我的订单右侧二维码</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt25.14')" >
+        pass</a>
+
+    <div id='div_pt25.14' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt25.14').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt25.14: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt25.15' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_wap_bottomdown: 15wap页底部下载app</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt25.15')" >
+        pass</a>
+
+    <div id='div_pt25.15' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt25.15').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt25.15: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt25.16' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_wap_downapp: wap底部弹层立即下载</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt25.16')" >
+        pass</a>
+
+    <div id='div_pt25.16' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt25.16').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt25.16: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt25.17' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_wap_lianxifangdong: 房源详情页联系房东下载app</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt25.17')" >
+        pass</a>
+
+    <div id='div_pt25.17' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt25.17').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt25.17: 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_online_editdata_fydes.TestEditdataFydes: 修改房源</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c26',1)">Detail</a></td>
+</tr>
+
+<tr id='ft26.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_edit_fy_des: 修改房源描述</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft26.1')" >
+        error</a>
+
+    <div id='div_ft26.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft26.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft26.1: Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_online_editdata_fydes.py", line 35, in test_edit_fy_des
+    po.EditAddress()
+  File "D:\python\mayi\test_case\page_obj\landlord_online_editdata.py", line 68, in EditAddress
+    self.click("id=&gt;EditAddress")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 165, in click
+    self.element_wait(css)
+  File "D:\python\mayi\test_case\page_obj\base.py", line 61, in element_wait
+    WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.ID, value)))
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_online_editdata_fydes.py", line 35, in test_edit_fy_des
+    po.EditAddress()
+  File "D:\python\mayi\test_case\page_obj\landlord_online_editdata.py", line 68, in EditAddress
+    self.click("id=&gt;EditAddress")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 165, in click
+    self.element_wait(css)
+  File "D:\python\mayi\test_case\page_obj\base.py", line 61, in element_wait
+    WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.ID, value)))
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_online_editdata_fypic.TestEditdataFypic: 房源图片</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td>2</td>
+    <td><a href="javascript:showClassDetail('c27',2)">Detail</a></td>
+</tr>
+
+<tr id='ft27.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_del_pic: 修改房源图片——上传图片和删除图片</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft27.1')" >
+        error</a>
+
+    <div id='div_ft27.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft27.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft27.1: Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_online_editdata_fypic.py", line 41, in test_del_pic
+    landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
+  File "D:\python\mayi\test_case\page_obj\landlord_nav_page.py", line 18, in Iamlandlord
+    self.click("xpath=&gt;/html/body/div[1]/div/ul/li[3]/div/a")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 167, in click
+    el.click()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 78, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 499, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element &lt;a href="/activity/app50" rel="nofollow" target="_blank" _mayi_rp="webaround|activity|firstorder"&gt;...&lt;/a&gt; is not clickable at point (1062, 31). Other element would receive the click: &lt;div times="1" id="xubox_shade1" class="xubox_shade" style="z-index:19891015; background-color:#000; opacity:0.3; filter:alpha(opacity=30);"&gt;&lt;/div&gt;
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_online_editdata_fypic.py", line 41, in test_del_pic
+    landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
+  File "D:\python\mayi\test_case\page_obj\landlord_nav_page.py", line 18, in Iamlandlord
+    self.click("xpath=&gt;/html/body/div[1]/div/ul/li[3]/div/a")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 167, in click
+    el.click()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 78, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 499, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element &lt;a href="/activity/app50" rel="nofollow" target="_blank" _mayi_rp="webaround|activity|firstorder"&gt;...&lt;/a&gt; is not clickable at point (1062, 31). Other element would receive the click: &lt;div times="1" id="xubox_shade1" class="xubox_shade" style="z-index:19891015; background-color:#000; opacity:0.3; filter:alpha(opacity=30);"&gt;&lt;/div&gt;
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft27.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_setcover: 设为封面</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft27.2')" >
+        error</a>
+
+    <div id='div_ft27.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft27.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft27.2: Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_online_editdata_fypic.py", line 22, in test_setcover
+    landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
+  File "D:\python\mayi\test_case\page_obj\landlord_nav_page.py", line 18, in Iamlandlord
+    self.click("xpath=&gt;/html/body/div[1]/div/ul/li[3]/div/a")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 167, in click
+    el.click()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 78, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 499, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element &lt;a href="/activity/app50" rel="nofollow" target="_blank" _mayi_rp="webaround|activity|firstorder"&gt;...&lt;/a&gt; is not clickable at point (1062, 31). Other element would receive the click: &lt;div times="1" id="xubox_shade1" class="xubox_shade" style="z-index:19891015; background-color:#000; opacity:0.3; filter:alpha(opacity=30);"&gt;&lt;/div&gt;
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_online_editdata_fypic.py", line 22, in test_setcover
+    landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
+  File "D:\python\mayi\test_case\page_obj\landlord_nav_page.py", line 18, in Iamlandlord
+    self.click("xpath=&gt;/html/body/div[1]/div/ul/li[3]/div/a")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 167, in click
+    el.click()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 78, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webelement.py", line 499, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element &lt;a href="/activity/app50" rel="nofollow" target="_blank" _mayi_rp="webaround|activity|firstorder"&gt;...&lt;/a&gt; is not clickable at point (1062, 31). Other element would receive the click: &lt;div times="1" id="xubox_shade1" class="xubox_shade" style="z-index:19891015; background-color:#000; opacity:0.3; filter:alpha(opacity=30);"&gt;&lt;/div&gt;
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_online_editdata_price.TestEditPrice: 价格要求</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c28',1)">Detail</a></td>
+</tr>
+
+<tr id='pt28.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_price: 修改房源价格</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_tenant_account.TestTenantAccount: 房客个人信息</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c29',1)">Detail</a></td>
+</tr>
+
+<tr id='ft29.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_tenant_account: 房客个人信息</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft29.1')" >
+        error</a>
+
+    <div id='div_ft29.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft29.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft29.1: Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_tenant_account.py", line 23, in test_tenant_account
+    tenant_nav_page.TenantNavPage(self.driver).accountmanager()
+  File "D:\python\mayi\test_case\page_obj\tenant_nav_page.py", line 25, in accountmanager
+    self.click("xpath=&gt;/html/body/div[13]/div/ul/li[3]/a")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 165, in click
+    self.element_wait(css)
+  File "D:\python\mayi\test_case\page_obj\base.py", line 69, in element_wait
+    WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.XPATH, value)))
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_tenant_account.py", line 23, in test_tenant_account
+    tenant_nav_page.TenantNavPage(self.driver).accountmanager()
+  File "D:\python\mayi\test_case\page_obj\tenant_nav_page.py", line 25, in accountmanager
+    self.click("xpath=&gt;/html/body/div[13]/div/ul/li[3]/a")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 165, in click
+    self.element_wait(css)
+  File "D:\python\mayi\test_case\page_obj\base.py", line 69, in element_wait
+    WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.XPATH, value)))
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_tenant_againorder.TestAgainOrder: 房客重新下单</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c30',1)">Detail</a></td>
+</tr>
+
+<tr id='ft30.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_againorder: 重新下单</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft30.1')" >
+        error</a>
+
+    <div id='div_ft30.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft30.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft30.1: Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_tenant_againorder.py", line 31, in test_againorder
+    wo.people()
+  File "D:\python\mayi\test_case\page_obj\wujiaqu_order_page.py", line 42, in people
+    self.type("xpath=&gt;html/body/form/div[2]/div[1]/div[1]/div/div/dl[3]/dd/input[2]",people)
+  File "D:\python\mayi\test_case\page_obj\base.py", line 144, in type
+    self.element_wait(css)
+  File "D:\python\mayi\test_case\page_obj\base.py", line 69, in element_wait
+    WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.XPATH, value)))
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 63, in __call__
+    return _find_element(driver, self.locator)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 402, in _find_element
+    raise e
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 398, in _find_element
+    return driver.find_element(*by)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 832, in find_element
+    'value': value})['value']
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_tenant_againorder.py", line 31, in test_againorder
+    wo.people()
+  File "D:\python\mayi\test_case\page_obj\wujiaqu_order_page.py", line 42, in people
+    self.type("xpath=&gt;html/body/form/div[2]/div[1]/div[1]/div/div/dl[3]/dd/input[2]",people)
+  File "D:\python\mayi\test_case\page_obj\base.py", line 144, in type
+    self.element_wait(css)
+  File "D:\python\mayi\test_case\page_obj\base.py", line 69, in element_wait
+    WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.XPATH, value)))
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 63, in __call__
+    return _find_element(driver, self.locator)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 402, in _find_element
+    raise e
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 398, in _find_element
+    return driver.find_element(*by)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 832, in find_element
+    'value': value})['value']
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_tenant_collection.TestTenantCollection: 我的收藏</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td>2</td>
+    <td><a href="javascript:showClassDetail('c31',2)">Detail</a></td>
+</tr>
+
+<tr id='ft31.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_cancel_collection: 我的收藏——取消收藏</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft31.1')" >
+        error</a>
+
+    <div id='div_ft31.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft31.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft31.1: Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_tenant_collection.py", line 25, in test_cancel_collection
+    tenant_nav_page.TenantNavPage(self.driver).mycollection()
+  File "D:\python\mayi\test_case\page_obj\tenant_nav_page.py", line 29, in mycollection
+    self.click("xpath=&gt;/html/body/div[13]/div/ul/li[4]/a")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 165, in click
+    self.element_wait(css)
+  File "D:\python\mayi\test_case\page_obj\base.py", line 69, in element_wait
+    WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.XPATH, value)))
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_tenant_collection.py", line 33, in test_cancel_collection
+    tenant_collection_page.TenantCollectionPage(self.driver).accept_alert()
+  File "D:\python\mayi\test_case\page_obj\base.py", line 330, in accept_alert
+    self.driver.switch_to.alert.accept()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\common\alert.py", line 90, in accept
+    self.driver.execute(Command.ACCEPT_ALERT)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no alert open
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_tenant_collection.py", line 25, in test_cancel_collection
+    tenant_nav_page.TenantNavPage(self.driver).mycollection()
+  File "D:\python\mayi\test_case\page_obj\tenant_nav_page.py", line 29, in mycollection
+    self.click("xpath=&gt;/html/body/div[13]/div/ul/li[4]/a")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 165, in click
+    self.element_wait(css)
+  File "D:\python\mayi\test_case\page_obj\base.py", line 69, in element_wait
+    WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.XPATH, value)))
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_tenant_collection.py", line 33, in test_cancel_collection
+    tenant_collection_page.TenantCollectionPage(self.driver).accept_alert()
+  File "D:\python\mayi\test_case\page_obj\base.py", line 330, in accept_alert
+    self.driver.switch_to.alert.accept()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\common\alert.py", line 90, in accept
+    self.driver.execute(Command.ACCEPT_ALERT)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no alert open
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft31.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_collection: 五家渠收藏房源</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft31.2')" >
+        error</a>
+
+    <div id='div_ft31.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft31.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft31.2: Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_tenant_collection.py", line 45, in test_collection
+    po.collection()
+  File "D:\python\mayi\test_case\page_obj\tenant_collection_page.py", line 17, in collection
+    self.click("xpath=&gt;html/body/div[14]/div[1]/div[2]/div[2]/div/dl/dd[1]/div/div[1]")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 165, in click
+    self.element_wait(css)
+  File "D:\python\mayi\test_case\page_obj\base.py", line 69, in element_wait
+    WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.XPATH, value)))
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_tenant_collection.py", line 48, in test_collection
+    tenant_collection_page.TenantCollectionPage(self.driver).accept_alert()
+  File "D:\python\mayi\test_case\page_obj\base.py", line 330, in accept_alert
+    self.driver.switch_to.alert.accept()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\common\alert.py", line 90, in accept
+    self.driver.execute(Command.ACCEPT_ALERT)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no alert open
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_tenant_collection.py", line 45, in test_collection
+    po.collection()
+  File "D:\python\mayi\test_case\page_obj\tenant_collection_page.py", line 17, in collection
+    self.click("xpath=&gt;html/body/div[14]/div[1]/div[2]/div[2]/div/dl/dd[1]/div/div[1]")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 165, in click
+    self.element_wait(css)
+  File "D:\python\mayi\test_case\page_obj\base.py", line 69, in element_wait
+    WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.XPATH, value)))
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_tenant_collection.py", line 48, in test_collection
+    tenant_collection_page.TenantCollectionPage(self.driver).accept_alert()
+  File "D:\python\mayi\test_case\page_obj\base.py", line 330, in accept_alert
+    self.driver.switch_to.alert.accept()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\common\alert.py", line 90, in accept
+    self.driver.execute(Command.ACCEPT_ALERT)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no alert open
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_tenant_msgmanage.TestTenantMsg: 房客消息通知</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c32',1)">Detail</a></td>
+</tr>
+
+<tr id='ft32.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_tenant_msg: 房客消息通知</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft32.1')" >
+        error</a>
+
+    <div id='div_ft32.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft32.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft32.1: Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_tenant_msgmanage.py", line 24, in test_tenant_msg
+    tenant_nav_page.TenantNavPage(self.driver).msgmanager()
+  File "D:\python\mayi\test_case\page_obj\tenant_nav_page.py", line 21, in msgmanager
+    self.click("xpath=&gt;/html/body/div[13]/div[1]/ul/li[2]/a")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 165, in click
+    self.element_wait(css)
+  File "D:\python\mayi\test_case\page_obj\base.py", line 69, in element_wait
+    WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.XPATH, value)))
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_tenant_msgmanage.py", line 24, in test_tenant_msg
+    tenant_nav_page.TenantNavPage(self.driver).msgmanager()
+  File "D:\python\mayi\test_case\page_obj\tenant_nav_page.py", line 21, in msgmanager
+    self.click("xpath=&gt;/html/body/div[13]/div[1]/ul/li[2]/a")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 165, in click
+    self.element_wait(css)
+  File "D:\python\mayi\test_case\page_obj\base.py", line 69, in element_wait
+    WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.XPATH, value)))
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_wujiaqu_order.TestWujiaquOrder: 五家渠下订单</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c33',1)">Detail</a></td>
+</tr>
+
+<tr id='ft33.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_wujiaqu_order</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft33.1')" >
+        error</a>
+
+    <div id='div_ft33.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft33.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft33.1: Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_wujiaqu_order.py", line 38, in test_wujiaqu_order
+    print(po.order_success())
+  File "D:\python\mayi\test_case\page_obj\wujiaqu_order_page.py", line 60, in order_success
+    text = self.get_text("xpath=&gt;//*[@id='payForm']/div/div[1]/div[2]/p[1]")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 278, in get_text
+    self.element_wait(css)
+  File "D:\python\mayi\test_case\page_obj\base.py", line 69, in element_wait
+    WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.XPATH, value)))
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 63, in __call__
+    return _find_element(driver, self.locator)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 402, in _find_element
+    raise e
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 398, in _find_element
+    return driver.find_element(*by)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 832, in find_element
+    'value': value})['value']
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: None
+Message: unexpected alert open: {Alert text : 请输入手机号并获取验证码！}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+Traceback (most recent call last):
+  File "D:\python\mayi\test_case\test_wujiaqu_order.py", line 38, in test_wujiaqu_order
+    print(po.order_success())
+  File "D:\python\mayi\test_case\page_obj\wujiaqu_order_page.py", line 60, in order_success
+    text = self.get_text("xpath=&gt;//*[@id='payForm']/div/div[1]/div[2]/p[1]")
+  File "D:\python\mayi\test_case\page_obj\base.py", line 278, in get_text
+    self.element_wait(css)
+  File "D:\python\mayi\test_case\page_obj\base.py", line 69, in element_wait
+    WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.XPATH, value)))
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 63, in __call__
+    return _find_element(driver, self.locator)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 402, in _find_element
+    raise e
+  File "C:\Python36\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 398, in _find_element
+    return driver.find_element(*by)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 832, in find_element
+    'value': value})['value']
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: None
+Message: unexpected alert open: {Alert text : 请输入手机号并获取验证码！}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.10586 x86_64)
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='total_row'>
+    <td>Total</td>
+    <td>75</td>
+    <td>52</td>
+    <td>1</td>
+    <td>22</td>
+    <td>&nbsp;</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+
+</body>
+</html>

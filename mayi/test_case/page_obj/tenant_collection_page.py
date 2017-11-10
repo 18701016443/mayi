@@ -25,5 +25,5 @@ class TenantCollectionPage(Pyse):
 
     #我的收藏——取消收藏
     def cancel_collection(self):
-        self.click("xpath=>html/body/div[13]/div/div/div/div/div[1]/div[2]/p[2]/font")
+        self.click("xpath=>html/body/div[14]/div/div/div/div/div[1]/div[2]/p[2]/font")
 

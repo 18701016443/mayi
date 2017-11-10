@@ -19,11 +19,11 @@ class LandlordOnlinePage(Pyse):
 
     #房源上线
     def room_online(self):
-        self.click("xpath=>html/body/div[13]/div[5]/div/div/div[1]/div[1]/div[2]/div[5]/ul/li[4]/a")
+        self.click("xpath=>html/body/div[14]/div[5]/div/div/div[1]/div[1]/div[2]/div[5]/ul/li[4]/a")
 
     #房源上线——成功文案
     def onlinesuccess_text(self):
-        text = self.get_text("xpath=>html/body/div[16]/div/div/div/div[2]/div[1]")
+        text = self.get_text("xpath=>html/body/div[17]/div/div/div/div[2]/div[1]")
         return text
 
     #房源上线成功——我知道了

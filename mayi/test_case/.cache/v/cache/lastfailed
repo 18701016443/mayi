@@ -1,10 +1,10 @@
 {
-  "test_landlord_read.py::TestLandlordRead::test_agreement": true,
+  "test_fabu_room.py::TestFabuRoom::test_fabu_room": true,
   "test_landlord_read.py::TestLandlordRead::test_privacypolicy": true,
   "test_landlord_read.py::TestLandlordRead::test_roomauditrule": true,
-  "test_landlord_read.py::TestLandlordRead::test_tenant_rule": true,
   "test_login.py": true,
   "test_login.py::TestLogin": true,
   "test_mayiQR.py::TestQR::test_bottom_left_Andriodbtn": true,
-  "test_tenant_account.py::TestTenantAccount::test_tenant_account": true
+  "test_tenant_account.py::TestTenantAccount::test_tenant_account": true,
+  "test_wujiaqu_order.py::TestWujiaquOrder::test_wujiaqu_order": true
 }

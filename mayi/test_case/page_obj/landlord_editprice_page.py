@@ -19,13 +19,13 @@ class LandlordEditpricePage(Pyse):
 
     #修改价格
     def edit_price(self):
-        self.click("xpath=>html/body/div[13]/div[5]/div/div/div[1]/div[1]/div[2]/div[5]/ul/li[1]/a")
+        self.click("xpath=>html/body/div[14]/div[5]/div/div/div[1]/div[1]/div[2]/div[5]/ul/li[1]/a")
 
     #特殊价是否参与打折
     def specialdiscount_yes(self):
-        self.click("xpath=>html/body/div[14]/div/div/div/div[2]/ul/li[5]/input[1]")
+        self.click("xpath=>html/body/div[15]/div/div/div/div[2]/ul/li[5]/input[1]")
     def specialdiscount_no(self):
-        self.click("xpath=>html/body/div[14]/div/div/div/div[2]/ul/li[5]/input[2]")
+        self.click("xpath=>html/body/div[15]/div/div/div/div[2]/ul/li[5]/input[2]")
 
     #修改价格弹窗——确定
     def confirmModifyPriceBtn(self):
@@ -37,7 +37,7 @@ class LandlordEditpricePage(Pyse):
 
     #修改价格弹窗文案
     def editsuccess_text(self):
-        text = self.get_text("xpath=>html/body/div[15]/div/div/div/div[2]/div[1]")
+        text = self.get_text("xpath=>html/body/div[16]/div/div/div/div[2]/div[1]")
         return text
     #修改价格弹窗——我知道了
     def changePriceSuccessBtn(self):

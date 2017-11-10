@@ -19,23 +19,23 @@ class LandlordNavPage(Pyse):
 
     #房东微信
     def close_weiChat(self):
-        self.click("xpath=>/html/body/div[13]/div[2]/div[2]/img[1]")
+        self.click("xpath=>/html/body/div[14]/div[2]/div[2]/img[1]")
 
     #房源管理
     def roommanager(self):
-        self.click("xpath=>/html/body/div[13]/div[5]/ul/li[2]/a")
+        self.click("xpath=>/html/body/div[14]/div[5]/ul/li[2]/a")
 
     #消息通知
     def msgmanager(self):
-        self.click("xpath=>/html/body/div[13]/div[5]/ul/li[3]/a")
+        self.click("xpath=>/html/body/div[14]/div[5]/ul/li[3]/a")
 
     #结算管理
     def settlements(self):
-        self.click("xpath=>/html/body/div[13]/div[5]/ul/li[4]/a")
+        self.click("xpath=>/html/body/div[14]/div[5]/ul/li[4]/a")
 
     #房东微店
     def microshopmanager(self):
-        self.click("xpath=>/html/body/div[13]/div[5]/ul/li[5]/a")
+        self.click("xpath=>/html/body/div[14]/div[5]/ul/li[5]/a")
 
     #特色体验
     def experience(self):
@@ -43,32 +43,32 @@ class LandlordNavPage(Pyse):
 
     #房东微信
     def landlordweixin(self):
-        self.click("xpath=>/html/body/div[13]/div[5]/ul/li[7]/a")
+        self.click("xpath=>/html/body/div[14]/div[5]/ul/li[7]/a")
 
     #房东讲堂
     def forum(self):
-        self.click("xpath=>/html/body/div[13]/div[5]/ul/li[8]/a")
+        self.click("xpath=>/html/body/div[14]/div[5]/ul/li[8]/a")
 
     #管理规范
     def manageStandard(self):
-        self.click("xpath=>/html/body/div[13]/div[5]/ul/li[9]/a")
+        self.click("xpath=>/html/body/div[14]/div[5]/ul/li[9]/a")
 
     #身份验证
     def authentication(self):
-        self.click("xpath=>/html/body/div[13]/div[5]/ul/li[10]/a")
+        self.click("xpath=>/html/body/div[14]/div[5]/ul/li[10]/a")
 
     #个人信息
     def accountmanager(self):
-        self.click("xpath=>/html/body/div[13]/div[5]/ul/li[11]/div/a[1]")
+        self.click("xpath=>/html/body/div[14]/div[5]/ul/li[11]/div/a[1]")
 
     #收款设置
     def paymentmanager(self):
-        self.click("xpath=>/html/body/div[13]/div[5]/ul/li[11]/div/a[2]")
+        self.click("xpath=>/html/body/div[14]/div[5]/ul/li[11]/div/a[2]")
 
     #密码设置
     def passwordmanager(self):
-        self.click("xpath=>/html/body/div[13]/div[5]/ul/li[11]/div/a[3]")
+        self.click("xpath=>/html/body/div[14]/div[5]/ul/li[11]/div/a[3]")
 
     #活动设置
     def activitymanager(self):
-        self.click("xpath=>/html/body/div[13]/div[5]/ul/li[11]/div/a[4]")
+        self.click("xpath=>/html/body/div[14]/div[5]/ul/li[11]/div/a[4]")

@@ -30,7 +30,7 @@ class TestTenantMsg(myunit.MyTest):
         lm.IM_text()
 
         lm.send_msg()
-        sleep(2)
+        sleep(3)
         function.insert_img(self.driver,"tenant_msg.png")
         lm.shrink()
 

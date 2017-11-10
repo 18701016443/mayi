@@ -14,5 +14,5 @@ class LandlordManageStandardPage(Pyse):
 
     #管理规范的文案
     def manageStandard_text(self):
-        text = self.get_text("xpath=>/html/body/div[13]/div[3]/div/div/div[2]")
+        text = self.get_text("xpath=>/html/body/div[14]/div[3]/div/div/div[2]")
         return text

@@ -16,6 +16,7 @@ class TestFabuRoom(myunit.MyTest):
     '''发布房源'''
     def test_fabu_room(self):
         login_page.LoginPage(self.driver).login()
+        sleep(5)
         po = fabu_room_page.FabuRoomPage(self.driver)
         po.fabu_room()
         sleep(2)
@@ -45,6 +46,12 @@ class TestFabuRoom(myunit.MyTest):
         po.title()
         sleep(2)
         po.intro()
+        sleep(2)
+        po.landmark()
+        sleep(2)
+        po.traffic()
+        sleep(2)
+        po.surroundings()
         sleep(2)
         po.detailSave()
 

@@ -72,7 +72,7 @@ class MaYiQRPage(Pyse):
 
     #房东招募
     def landlord_zhaomu_QR(self):
-        QR_url = self.get_attribute("xpath=>/html/body/div[13]/div[2]/div[2]/div[2]/div[3]/div[3]/img","src")
+        QR_url = self.get_attribute("xpath=>/html/body/div[14]/div[2]/div[2]/div[2]/div[3]/div[3]/img","src")
         return QR_url
     # def close_(self):
     #     self.click("xpath=>//*[@id='floatingLayer']/div[1]/div[2]/div[5]/img")
@@ -80,3 +80,20 @@ class MaYiQRPage(Pyse):
     # 下载页——下载按钮
     def down_btn(self):
         self.click("xpath=>/html/body/section/div[1]/div/a")
+
+
+    #WAP页下载app
+    def wap_down_btn(self):
+        self.click("id=>app_download")
+
+    #WAP页底部下载
+    def wap_bottom_down(self):
+        self.click("class=>appdownload")
+
+    #联系房东
+    def lianxifangdong_down(self):
+        self.click("class=>pBox")
+
+    #房东主页下载app
+    def landlord_index_down(self):
+        self.click("xpath=>//*[@id='indexPage']/div[1]/div[3]/p[3]/a")

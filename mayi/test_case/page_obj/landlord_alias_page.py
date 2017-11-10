@@ -16,12 +16,12 @@ class LandlordAliasPage(Pyse):
 
     #设置别名
     def alias(self):
-        self.click("xpath=>html/body/div[13]/div[5]/div/div/div[1]/div[1]/div[2]/div[3]/p[2]/input")
+        self.click("xpath=>html/body/div[14]/div[5]/div/div/div[1]/div[1]/div[2]/div[3]/p[2]/input")
 
     #输入别名
     def input_alias(self):
         alias = mydef.rad_word(5)
-        self.clear("xpath=>html/body/div[13]/div[5]/div/div/div[1]/div[1]/div[2]/div[3]/p[1]/input")
-        self.type("xpath=>html/body/div[13]/div[5]/div/div/div[1]/div[1]/div[2]/div[3]/p[1]/input",alias)
+        self.clear("xpath=>html/body/div[14]/div[5]/div/div/div[1]/div[1]/div[2]/div[3]/p[1]/input")
+        self.type("xpath=>html/body/div[14]/div[5]/div/div/div[1]/div[1]/div[2]/div[3]/p[1]/input",alias)
 
 

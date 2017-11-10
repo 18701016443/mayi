@@ -29,7 +29,9 @@ class TestActivity(myunit.MyTest):
 
         po = landlord_activity_page.LandlordActivity(self.driver)
         print(po.text())
+        sleep(2)
         po.active_good()
+        sleep(2)
         function.insert_img(self.driver,"activity_good.png")
         po.img_close()
 
@@ -47,6 +49,7 @@ class TestActivity(myunit.MyTest):
         landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
 
         po = landlord_activity_page.LandlordActivity(self.driver)
+        sleep(2)
         po.regular_desc()
         function.insert_img(self.driver,"regular_desc.png")
         print(po.regular_desc_text())

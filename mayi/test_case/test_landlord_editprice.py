@@ -29,14 +29,15 @@ class TestLandlordEditprice(myunit.MyTest):
         po.roomfilter2()
         sleep(2)
         po.edit_price()
-
+        sleep(2)
         fb.dayprice()
         sleep(2)
         fb.weekendtype()
+        sleep(2)
         fb.weekpriceRet()
         sleep(2)
         fb.monthpriceRet()
-
+        sleep(2)
         po.specialdiscount_yes()
         sleep(2)
         function.insert_img(self.driver,"editPrice.png")

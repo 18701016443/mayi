@@ -15,11 +15,11 @@ class LandlordOfflinePage(Pyse):
 
     #房源下线
     def room_offline(self):
-        self.click("xpath=>html/body/div[13]/div[5]/div/div/div[1]/div[1]/div[2]/div[5]/ul/li[4]/a")
+        self.click("xpath=>html/body/div[14]/div[5]/div/div/div[1]/div[1]/div[2]/div[5]/ul/li[4]/a")
 
     #下线原因
     def offline_reason(self,num):
-        self.click("xpath=>html/body/div[19]/div/div/div/div[2]/div[2]/div/label["+num+"]")
+        self.click("xpath=>html/body/div[20]/div/div/div/div[2]/div[2]/div/label["+num+"]")
 
     #操作下线
     def offlineReasonBtn(self):
@@ -31,7 +31,7 @@ class LandlordOfflinePage(Pyse):
 
     #下线房源弹窗——“下线成功”文案
     def offlineSuccess_text(self):
-        text = self.get_text("xpath=>html/body/div[20]/div/div/div/div[2]/div[1]")
+        text = self.get_text("xpath=>html/body/div[21]/div/div/div/div[2]/div[1]")
         return text
 
     #关闭
@@ -48,5 +48,5 @@ class LandlordOfflinePage(Pyse):
 
     #下线房源弹窗文案
     def offline_text(self):
-        text = self.get_text("xpath=>html/body/div[18]/div/div/div/div[2]/div[1]/div")
+        text = self.get_text("xpath=>html/body/div[19]/div/div/div/div[2]/div[1]/div")
         return text

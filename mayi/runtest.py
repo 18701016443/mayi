@@ -20,8 +20,6 @@ def send_mail(file_new):
     mail_body = f.read()
     f.close()
 
-
-
     #以附件的形式发送邮件
     att = MIMEText(mail_body, "base64", "utf-8")
     att["Content-Type"] = "application/octet-stream"
@@ -81,7 +79,7 @@ if __name__ == "__main__":
                             description ="环境 win10  浏览器：谷歌/59版")
 
     discover = unittest.defaultTestLoader.discover("./test_case/",
-                                                   pattern="test_login.py")
+                                                   pattern="test_*.py")
 
     runner.run(discover)
     fp.close()

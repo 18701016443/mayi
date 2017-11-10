@@ -22,17 +22,17 @@ class FabuRoomPage(Pyse):
     def fabu_room(self):
         self.click("link_text=>免费发布房源")
 
-    #关闭标准框
+    #关闭蚂蚁短租房源合作标准框
     def close_window(self):
         self.click("class=>z_close")
 
     #房屋类型
     def room_type(self):
-        self.click("xpath=>/html/body/div[13]/div[3]/form/div[1]/dl[2]/dl[2]/dd/select/option["+ mydef.rad_num(1,18)+"]")
+        self.click("xpath=>/html/body/div[14]/div[3]/form/div[1]/dl[2]/dl[2]/dd/select/option["+ mydef.rad_num(1,18)+"]")
 
     #是否地下室
     def dixiashi(self):
-        self.click("xpath=>/html/body/div[13]/div[3]/form/div[1]/dl[2]/dl[3]/dd/select/option[" + mydef.rad_num(1,4) + "]")
+        self.click("xpath=>/html/body/div[14]/div[3]/form/div[1]/dl[2]/dl[3]/dd/select/option[" + mydef.rad_num(1,4) + "]")
 
     #房屋面积
     def room_size(self):
@@ -108,7 +108,7 @@ class FabuRoomPage(Pyse):
 
     #被单更换
     def sheet_replacement(self):
-        self.click("xpath=>/html/body/div[13]/div[3]/form/div[1]/dl[2]/dl[9]/dd/select/option["+mydef.rad_num(1,3)+"]")
+        self.click("xpath=>/html/body/div[14]/div[3]/form/div[1]/dl[2]/dl[9]/dd/select/option["+mydef.rad_num(1,3)+"]")
 
     #配套设施
         #免费项（循环勾选搜索项）
@@ -210,7 +210,7 @@ class FabuRoomPage(Pyse):
 
 #**********第四步定位**********
 
-    #每日价格（60以上）
+        #每日价格（60以上）
     def dayprice(self):
         dayprice = mydef.rad_num(60,9999)
         self.clear("id=>dayprice")
@@ -239,10 +239,10 @@ class FabuRoomPage(Pyse):
 
     #特殊价是否参与打折
     def specialdiscount_yes(self):
-        self.click("xpath=>/html/body/div[13]/div[2]/form/div[1]/ul/li[4]/div/input[1]")
+        self.click("xpath=>/html/body/div[14]/div[2]/form/div[1]/ul/li[4]/div/input[1]")
 
     def specialdiscount_no(self):
-        self.click("name=>/html/body/div[13]/div[2]/form/div[1]/ul/li[4]/div/input[2]")
+        self.click("name=>/html/body/div[14]/div[2]/form/div[1]/ul/li[4]/div/input[2]")
 
     #押金
     def deposit(self):
@@ -307,15 +307,15 @@ class FabuRoomPage(Pyse):
 
     #退款规则：如房客想取消预订，您的退款规则是
     def refunddays(self):
-        self.click("xpath=>//*[@id='refunddays']/option["+mydef.rad_num(1,5)+"]")
+        self.click("xpath=>//*[@id='refunddays']/option["+mydef.rad_num(2,4)+"]")
 
     #入住时间
     def checkintimeStr(self):
-        self.click("xpath=>/html/body/div[13]/div[2]/form/div[3]/ul/li[1]/div/select/option["+mydef.rad_num(1,24)+"]")
+        self.click("xpath=>/html/body/div[14]/div[2]/form/div[3]/ul/li[1]/div/select/option["+mydef.rad_num(1,24)+"]")
 
     #退房时间
     def checkouttimeStr(self):
-        self.click("xpath=>/html/body/div[13]/div[2]/form/div[3]/ul/li[2]/div/select/option["+mydef.rad_num(1,24)+"]")
+        self.click("xpath=>/html/body/div[14]/div[2]/form/div[3]/ul/li[2]/div/select/option["+mydef.rad_num(1,24)+"]")
 
     #接待时间
     def shopTimeStart(self):
@@ -335,20 +335,20 @@ class FabuRoomPage(Pyse):
 
     #接待外宾
     def foreigner_yes(self):
-        self.click("xpath=>/html/body/div[13]/div[2]/form/div[3]/ul/li[6]/div/label[1]/input")
+        self.click("xpath=>/html/body/div[14]/div[2]/form/div[3]/ul/li[6]/div/label[1]/input")
 
     def foreigner_no(self):
-        self.click("xpath=>/html/body/div[13]/div[2]/form/div[3]/ul/li[6]/div/label[2]/input")
+        self.click("xpath=>/html/body/div[14]/div[2]/form/div[3]/ul/li[6]/div/label[2]/input")
 
     #发票
     def bill_yes(self):
-        self.click("xpath=>/html/body/div[13]/div[2]/form/div[3]/ul/li[7]/div/label[1]/input")
+        self.click("xpath=>/html/body/div[14]/div[2]/form/div[3]/ul/li[7]/div/label[1]/input")
     def bill_no(self):
-        self.click("xpath=>/html/body/div[13]/div[2]/form/div[3]/ul/li[7]/div/label[2]/input")
+        self.click("xpath=>/html/body/div[14]/div[2]/form/div[3]/ul/li[7]/div/label[2]/input")
 
     #保存下一步
     def four_save(self):
-        self.click("xpath=>/html/body/div[13]/div[2]/form/div[4]/a")
+        self.click("xpath=>/html/body/div[14]/div[2]/form/div[4]/a")
 
 #**********第五步定位**********
 
@@ -379,12 +379,12 @@ class FabuRoomPage(Pyse):
 
     #保存下一步
     def five_save(self):
-        self.click("xpath=>/html/body/div[13]/div[5]/div")
+        self.click("xpath=>/html/body/div[14]/div[5]/div")
 
     #信息弹窗
     def alert_windows(self):
         self.click("xpath=>//*[@id='xubox_layer1']/div[1]/span/a")
 
     def submit_success(self):
-        text = self.get_text("xpath=>/html/body/div[13]/div[2]/div/dl/dd/h3")
+        text = self.get_text("xpath=>/html/body/div[14]/div[2]/div/dl/dd/h3")
         return text

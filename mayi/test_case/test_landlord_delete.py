@@ -65,17 +65,19 @@ class TestDelete(myunit.MyTest):
         landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
         sleep(2)
         landlord_nav_page.LandlordNavPage(self.driver).roommanager()
-
+        sleep(2)
         po = landlord_delete_page.LandlordDeletePage(self.driver)
         po.roomfilter2()
+        sleep(2)
         po.checking_delete()
         sleep(1)
         po.delBtn()
         sleep(2)
-        print(po.checking_delsuccess_text())
-        assert po.checking_delsuccess_text()=="删除成功！"
+        print(po.delsuccess_text())
+        assert po.delsuccess_text()=="删除成功！"
         function.insert_img(self.driver,"delete.png")
         po.okDelSuccessBtn()
+
 
     def test_nopassroom_delete(self):
         '''未通过——删除房源'''

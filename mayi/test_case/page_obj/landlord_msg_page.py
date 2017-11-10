@@ -15,11 +15,11 @@ class LandlordMsgPage(Pyse):
 
     #回复
     def return_msg(self):
-        self.click("xpath=>html/body/div[13]/div[5]/div/div/div/div[1]/div[2]/ul/li[2]/span/span/a")
+        self.click("xpath=>html/body/div[14]/div[5]/div/div/div/div[1]/div[2]/ul/li[2]/span/span/a")
 
     #查看
     def look(self):
-        self.click("xpath=>html/body/div[13]/div[5]/div/div/div/div[1]/div[2]/ul/li[1]/a")
+        self.click("xpath=>html/body/div[14]/div[5]/div/div/div/div[1]/div[2]/ul/li[1]/a")
 
     #IM输入区域
     def IM_text(self):
@@ -36,6 +36,6 @@ class LandlordMsgPage(Pyse):
 
     #聊天记录
     def msg_record(self):
-        text = self.get_text("xpath=>html/body/div[13]/div[5]/div/div[2]")
+        text = self.get_text("xpath=>html/body/div[14]/div[5]/div/div[2]")
         return text
 

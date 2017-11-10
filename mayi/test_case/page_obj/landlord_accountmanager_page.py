@@ -21,7 +21,7 @@ class LandlordAccountmanagerPage(Pyse):
 
     #真实姓名
     def realname(self):
-        realname = mydef.rad_word(5)
+        realname = mydef.rad_only_word(5)
         self.clear("id=>realname")
         self.type("id=>realname",realname)
 

@@ -15,5 +15,5 @@ class LandlordForumPage(Pyse):
 
     #房东讲堂文案
     def forum_text(self):
-        text = self.get_text("xpath=>/html/body/div[13]/div[5]/div")
+        text = self.get_text("xpath=>/html/body/div[14]/div[5]/div")
         return text

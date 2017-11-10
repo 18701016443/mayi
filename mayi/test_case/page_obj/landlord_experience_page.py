@@ -15,11 +15,11 @@ class LandlordExperiencePage(Pyse):
 
     #特色体验介绍
     def tsty_introduce(self):
-        self.click("xpath=>/html/body/div[13]/ul/a[2]")
+        self.click("xpath=>html/body/div[14]/ul/a[2]")
 
     #创建新体验
     def new_tsty(self):
-        self.click("xpath=>/html/body/div[13]/ul/a[1]")
+        self.click("xpath=>html/body/div[14]/ul/a[1]")
 
     #体验名称
     def title(self):
@@ -60,39 +60,39 @@ class LandlordExperiencePage(Pyse):
 
     #请选择提供体验的房源
     def add_room(self):
-        self.click("xpath=>/html/body/div[13]/div[5]/div/div[1]/dl/dd[7]/span[2]/img")
+        self.click("xpath=>html/body/div[14]/div[5]/div/div[1]/dl/dd[7]/span[2]/img")
 
     #去掉全部房源
     def cancel_allroom(self):
-        self.click("xpath=>/html/body/div[13]/div[5]/div/div[1]/div[1]/div[2]/div[2]/span[1]")
+        self.click("xpath=>html/body/div[14]/div[5]/div/div[1]/div[1]/div[2]/div[2]/span[1]")
 
     #选择第一个房源
     def choose_oneroom(self):
-        self.click("xpath=>/html/body/div[13]/div[5]/div/div[1]/div[1]/div[2]/div[2]/ul/li[1]/img")
+        self.click("xpath=>html/body/div[14]/div[5]/div/div[1]/div[1]/div[2]/div[2]/ul/li[1]/img")
 
     #确定
     def sure_add(self):
-        self.click("xpath=>/html/body/div[13]/div[5]/div/div[1]/div[1]/div[2]/button")
+        self.click("xpath=>html/body/div[14]/div[5]/div/div[1]/div[1]/div[2]/button")
 
     #提交审核
     def check(self):
-        self.click("xpath=>/html/body/div[13]/div[5]/div/div[1]/div[2]")
+        self.click("xpath=>html/body/div[14]/div[5]/div/div[1]/div[2]")
 
     #信息提交成功文案
     def success_text(self):
-        text = self.get_text("xpath=>/html/body/div[13]/div[5]/div/div[1]/div[3]/div[2]/p")
+        text = self.get_text("xpath=>/html/body/div[14]/div[5]/div/div[1]/div[3]/div[2]/p")
         return text
 
     #关闭弹窗
     def close_alert_windows(self):
-        self.click("xpath=>/html/body/div[13]/div[5]/div/div[1]/div[3]/div[2]/img")
+        self.click("xpath=>/html/body/div[14]/div[5]/div/div[1]/div[3]/div[2]/img")
 
     #完善个人资料
     def go_accountmanager(self):
-        self.click("xpath=>/html/body/div[13]/div[5]/div/div[1]/div[3]/div[2]/div/a")
+        self.click("xpath=>/html/body/div[14]/div[5]/div/div[1]/div[3]/div[2]/div/a")
 
     #查看详情
     def look_des(self):
-        self.click("xpath=>/html/body/div[13]/div[5]/div[9]/div[2]/div[1]/div[3]/ul/li")
+        self.click("xpath=>/html/body/div[14]/div[5]/div[9]/div[2]/div[1]/div[3]/ul/li")
 
 

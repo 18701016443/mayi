@@ -21,11 +21,11 @@ class LandlordRoomsearchPage(Pyse):
 
     #搜索
     def search(self):
-        self.click("xpath=>/html/body/div[13]/div[5]/div/div[1]/div[2]/input")
+        self.click("xpath=>/html/body/div[14]/div[5]/div/div[1]/div[2]/input")
 
     #详情
     def details(self):
-        self.click("xpath=>/html/body/div[13]/div[5]/div/div[2]/div[2]/table/tbody/tr[1]/td[9]/a")
+        self.click("xpath=>/html/body/div[14]/div[5]/div/div[2]/div[2]/table/tbody/tr[1]/td[9]/a")
 
     #关闭
     def closeModifyPriceBtn(self):
@@ -33,4 +33,4 @@ class LandlordRoomsearchPage(Pyse):
 
     #支付宝查账说明
     def alipayprompt(self):
-        self.open_new_window("xpath=>/html/body/div[13]/div[5]/div/div[2]/div[1]/a")
+        self.open_new_window("xpath=>/html/body/div[14]/div[5]/div/div[2]/div[1]/a")

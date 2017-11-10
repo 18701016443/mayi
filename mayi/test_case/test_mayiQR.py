@@ -25,7 +25,7 @@ class TestQR(myunit.MyTest):
         login_page.LoginPage(self.driver).imagecode1()
         login_page.LoginPage(self.driver).loginbyupdo()
 
-    def public_google_downpage(self,url):
+    def public_google_downpage(self,url,p):
         # 进入谷歌下载页面
         self.driver.get("chrome://downloads/")
         sleep(2)
@@ -43,6 +43,7 @@ class TestQR(myunit.MyTest):
         APP_size = size[1]
         sleep(2)
         print("")
+        print("二维码所在位置：" + p)
         print("二维码解析结果：" + url)
         print("APP包名：" + APP_name)
         print("APP下载地址：" + APP_url)
@@ -50,7 +51,8 @@ class TestQR(myunit.MyTest):
 
 
     def test_nav_QR(self):
-        '''首页导航——APP首单立减5元——二维码'''
+        '''11首页导航——APP首单立减5元——二维码'''
+        p = "首页导航——APP首单立减5元——二维码"
         po = mayi_QR_page.MaYiQRPage(self.driver)
 
 
@@ -66,10 +68,11 @@ class TestQR(myunit.MyTest):
         sleep(2)
 
         #调用公共函数，打印想获取的数据
-        self.public_google_downpage(url)
+        self.public_google_downpage(url,p)
 
     def test_bottom_QR(self):
-        '''首页底部二维码'''
+        '''④首页底部二维码'''
+        p = "首页底部二维码"
         po = mayi_QR_page.MaYiQRPage(self.driver)
 
         # 获取最新的二维码url，并传到解析方法中。也可直接把url直接传，考虑二维码url可能会改变，因此每次都获取最新的。
@@ -84,11 +87,12 @@ class TestQR(myunit.MyTest):
         sleep(2)
 
         # 调用公共函数，打印想获取的数据
-        self.public_google_downpage(url)
+        self.public_google_downpage(url,p)
 
 
     def test_Androiddown_btn(self):
-        '''首页底部Android下载按钮'''
+        '''③首页底部Android下载按钮'''
+        p = "首页底部Android下载按钮"
         po = mayi_QR_page.MaYiQRPage(self.driver)
         po.opentest("http://www.mayi.com")
         po.js("var j = document.body.scrollTop = 4935")
@@ -100,11 +104,12 @@ class TestQR(myunit.MyTest):
         sleep(3)
 
         # 调用公共函数，打印想获取的数据
-        self.public_google_downpage(url)
+        self.public_google_downpage(url,p)
 
 
     def test_bottom_left_QR(self):
-        '''下载蚂蚁短租客户端手机注册立送5元——二维码'''
+        '''⑥下载蚂蚁短租客户端手机注册立送5元——二维码'''
+        p = "下载蚂蚁短租客户端手机注册立送5元——二维码"
         po = mayi_QR_page.MaYiQRPage(self.driver)
 
         url = jiexi_QR.decode_qr("http://staticnew.mayi.com/resourcesWeb/v201510/images/commom/app.jpg")
@@ -118,10 +123,11 @@ class TestQR(myunit.MyTest):
         sleep(2)
 
         # 调用公共函数，打印想获取的数据
-        self.public_google_downpage(url)
+        self.public_google_downpage(url,p)
 
     def test_bottom_left_Andriodbtn(self):
-        '''下载蚂蚁短租客户端手机注册立送5元——Android下载按钮'''
+        '''⑤下载蚂蚁短租客户端手机注册立送5元——Android下载按钮'''
+        p = "下载蚂蚁短租客户端手机注册立送5元——Android下载按钮"
         po = mayi_QR_page.MaYiQRPage(self.driver)
         po.opentest("http://www.mayi.com")
         sleep(3)
@@ -131,10 +137,11 @@ class TestQR(myunit.MyTest):
         sleep(3)
 
         # 调用公共函数，打印想获取的数据
-        self.public_google_downpage(url)
+        self.public_google_downpage(url,p)
 
     def test_APP50_QR(self):
-        '''APP50下载页面的二维码'''
+        '''①APP50下载页面的二维码'''
+        p = "APP50下载页面的二维码"
         po = mayi_QR_page.MaYiQRPage(self.driver)
 
         url = jiexi_QR.decode_qr("http://staticnew.mayi.com/resourcesWeb/topic/app50/images/fkerwei.png")
@@ -148,10 +155,11 @@ class TestQR(myunit.MyTest):
         sleep(2)
 
         # 调用公共函数，打印想获取的数据
-        self.public_google_downpage(url)
+        self.public_google_downpage(url,p)
 
     def test_APP50_andriodbtn(self):
-        '''APP50下载页面的Android下载按钮'''
+        '''②APP50下载页面的Android下载按钮'''
+        p = "APP50下载页面的Android下载按钮"
         po = mayi_QR_page.MaYiQRPage(self.driver)
         po.opentest("http://www.mayi.com/activity/app50")
         sleep(3)
@@ -160,10 +168,11 @@ class TestQR(myunit.MyTest):
         sleep(3)
 
         # 调用公共函数，打印想获取的数据
-        self.public_google_downpage(url)
+        self.public_google_downpage(url,p)
 
     def test_order_banner_QR(self):
-        '''房东我的订单banner图第一张——二维码'''
+        '''12房东我的订单banner图第一张——二维码'''
+        p = "房东我的订单banner图第一张——二维码"
         po = mayi_QR_page.MaYiQRPage(self.driver)
         po.opentest("http://www.mayi.com")
         #登录
@@ -185,10 +194,11 @@ class TestQR(myunit.MyTest):
         sleep(2)
 
         # 调用公共函数，打印想获取的数据
-        self.public_google_downpage(url)
+        self.public_google_downpage(url,p)
 
     def test_index_rigit_QR(self):
-        '''首页右侧保洁合作下面——APP首单立减5元——二维码'''
+        '''⑦首页右侧保洁合作下面——APP首单立减5元——二维码'''
+        p = "首页右侧保洁合作下面——APP首单立减5元——二维码"
         po = mayi_QR_page.MaYiQRPage(self.driver)
         po.opentest("http://www.mayi.com")
         po.js("var j = document.body.scrollTop = 1000")
@@ -205,10 +215,11 @@ class TestQR(myunit.MyTest):
         sleep(2)
 
         # 调用公共函数，打印想获取的数据
-        self.public_google_downpage(url)
+        self.public_google_downpage(url,p)
 
     def test_order_call_QR(self):
-        '''下单页——拨打电话——二维码'''
+        '''13下单页——拨打电话——二维码'''
+        p = "下单页——拨打电话——二维码"
         po = mayi_QR_page.MaYiQRPage(self.driver)
         po.opentest("http://www.mayi.com/room/851272901")
 
@@ -224,10 +235,11 @@ class TestQR(myunit.MyTest):
         sleep(2)
 
         # 调用公共函数，打印想获取的数据
-        self.public_google_downpage(url)
+        self.public_google_downpage(url,p)
 
     def test_tenant_order_QR(self):
-        '''房客我的订单右侧二维码'''
+        '''14房客我的订单右侧二维码'''
+        p = "房客我的订单右侧二维码"
         po = mayi_QR_page.MaYiQRPage(self.driver)
         po.opentest("http://www.mayi.com/")
         self.login_online()
@@ -246,10 +258,11 @@ class TestQR(myunit.MyTest):
         sleep(2)
 
         # 调用公共函数，打印想获取的数据
-        self.public_google_downpage(url)
+        self.public_google_downpage(url,p)
 
     def test_msg_QR(self):
-        '''IM聊天的二维码'''
+        '''⑩IM聊天的二维码'''
+        p = "IM聊天的二维码"
         po = mayi_QR_page.MaYiQRPage(self.driver)
 
         url = jiexi_QR.decode_qr("http://staticnew.mayi.com/resourcesWeb/v201510/images/app_down_im.png")
@@ -263,10 +276,11 @@ class TestQR(myunit.MyTest):
         # sleep(2)
 
         # 调用公共函数，打印想获取的数据
-        self.public_google_downpage(url)
+        self.public_google_downpage(url,p)
 
     def test_landlord_zhaomu_QR(self):
-        '''PC房东招募的二维码'''
+        '''⑨PC房东招募的二维码'''
+        p = "PC房东招募的二维码"
         po = mayi_QR_page.MaYiQRPage(self.driver)
 
         url = jiexi_QR.decode_qr("http://staticnew.mayi.com/resourcesWeb/landlordRecruit/images/code.png")
@@ -280,7 +294,64 @@ class TestQR(myunit.MyTest):
         sleep(2)
 
         # 调用公共函数，打印想获取的数据
-        self.public_google_downpage(url)
+        self.public_google_downpage(url,p)
+
+
+    def test_wap_downapp(self):
+        '''wap底部弹层立即下载'''
+        p = "wap页面底部弹层立即下载"
+        po = mayi_QR_page.MaYiQRPage(self.driver)
+
+        url = "http://m.mayi.com/"
+        po.opentest(url)
+        sleep(2)
+        po.wap_down_btn()
+        sleep(2)
+        # 调用公共函数，打印想获取的数据
+        self.public_google_downpage(url,p)
+
+    def test_wap_bottomdown(self):
+        '''15wap页底部下载app'''
+        p = "wap页底部下载app"
+        po = mayi_QR_page.MaYiQRPage(self.driver)
+
+        url = "http://m.mayi.com/"
+        po.opentest(url)
+        sleep(2)
+        po.js("var j = document.body.scrollTop=5536")
+        po.wap_bottom_down()
+        sleep(2)
+        # 调用公共函数，打印想获取的数据
+        self.public_google_downpage(url,p)
+
+    def test_wap_lianxifangdong(self):
+        '''房源详情页联系房东下载app'''
+        p = "WAP房源详情页联系房东下载app"
+        po = mayi_QR_page.MaYiQRPage(self.driver)
+
+        url = "http://m.mayi.com/room/851083925"
+
+        po.opentest(url)
+        sleep(2)
+        po.lianxifangdong_down()
+        sleep(2)
+        # 调用公共函数，打印想获取的数据
+        self.public_google_downpage(url,p)
+
+    def test_landlord_index(self):
+        '''⑧房东主页下载app'''
+        p = "房东主页下载app"
+        po = mayi_QR_page.MaYiQRPage(self.driver)
+
+        url = "http://m.mayi.com/landlord/landlordIndex/854597541/?client=false&roomId=851013710"
+
+        po.opentest(url)
+        sleep(2)
+        po.landlord_index_down()
+        sleep(2)
+        # 调用公共函数，打印想获取的数据
+        self.public_google_downpage(url,p)
+
 
 if __name__ == "__main__":
     unittest.main()

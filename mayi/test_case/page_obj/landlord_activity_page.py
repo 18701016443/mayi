@@ -15,7 +15,7 @@ class LandlordActivity(Pyse):
 
     #活动页面文案
     def text(self):
-        text= self.get_text("xpath=>/html/body/div[13]/div[5]/div/div[1]/div[1]/p")
+        text= self.get_text("xpath=>/html/body/div[14]/div[5]/div/div[1]/div[1]/p")
         return text
 
     #活动好处
@@ -24,7 +24,7 @@ class LandlordActivity(Pyse):
 
     #活动好处弹窗关闭按钮
     def img_close(self):
-        self.click("xpath=>/html/body/div[13]/div[5]/div/div[1]/div[4]/div[2]/img")
+        self.click("xpath=>/html/body/div[14]/div[5]/div/div[1]/div[4]/div[2]/img")
 
     #活动规则
     def regular_desc(self):
@@ -32,12 +32,12 @@ class LandlordActivity(Pyse):
 
     #活动规则弹窗文案
     def regular_desc_text(self):
-        text = self.get_text("xpath=>/html/body/div[13]/div[5]/div/div[1]/div[3]/div[2]")
+        text = self.get_text("xpath=>/html/body/div[14]/div[5]/div/div[1]/div[3]/div[2]")
         return text
 
     #活动规则弹窗关闭按钮
     def regular_desc_close(self):
-        self.click("xpath=>/html/body/div[13]/div[5]/div/div[1]/div[3]/div[2]/img")
+        self.click("xpath=>/html/body/div[14]/div[5]/div/div[1]/div[3]/div[2]/img")
 
 
 
