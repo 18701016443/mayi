@@ -30,6 +30,7 @@ class FabuRoomPage(Pyse):
     def room_type(self):
         self.click("xpath=>/html/body/div[14]/div[3]/form/div[1]/dl[2]/dl[2]/dd/select/option["+ mydef.rad_num(1,18)+"]")
 
+
     #是否地下室
     def dixiashi(self):
         self.click("xpath=>/html/body/div[14]/div[3]/form/div[1]/dl[2]/dl[3]/dd/select/option[" + mydef.rad_num(1,4) + "]")

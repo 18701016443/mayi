@@ -16,7 +16,7 @@ def rad_num(num1,num2):
     rad_num = str(rad_num)
     return rad_num
 
-#产生随机字母+数字
+#产生随机字母 + 数字
 def rad_word(num):
     characters = string.ascii_letters + string.digits
     rad_word = "".join(choice(characters) for x in range(num))

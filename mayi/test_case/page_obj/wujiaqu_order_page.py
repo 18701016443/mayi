@@ -47,9 +47,20 @@ class WujiaquOrderPage(Pyse):
         self.clear("id=>tenantname")
         self.type("id=>tenantname",tenantname)
 
+    def name(self):
+        n = self.get_text("id=>tenantname")
+        return n
+
+    # def phone(self):
+    #     ph ="15539243368"
+    #     self.clear("id=>tenantmobile")
+    #     self.type("id=>tenantmobile",ph)
+    def xiug(self):
+        self.click("id=>editMobile")
+
     #保险联系人
     def user(self):
-        self.click("xpath=>html/body/form/div[2]/div[1]/div[4]/div/div[1]/div[2]/div[1]/div[2]/label/input")
+        self.click("xpath=>//*[@id='insuranceDiv']/div/div[1]/div[1]/div/ul/li[1]/div/div[1]/span")
 
     #提交订单
     def submit_order(self):

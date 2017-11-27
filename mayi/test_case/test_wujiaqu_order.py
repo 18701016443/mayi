@@ -26,15 +26,22 @@ class TestWujiaquOrder(myunit.MyTest):
         # po.one_room()
         sleep(3)
         po.goBookBtn()
+
         sleep(2)
         po.people()
         sleep(1)
         # po.tenantname()
         sleep(1)
+
+        # po.js( "var j = document.getElementById('tenantmobile').removeAttribute('readonly')" )
+        # po.phone()
+
+        sleep(2)
         po.user()
         sleep(1)
+
         po.submit_order()
-        sleep(2)
+        sleep(5)
         print(po.order_success())
         assert po.order_success()=="订单提交成功"
         function.insert_img(self.driver,"order_success.png")
