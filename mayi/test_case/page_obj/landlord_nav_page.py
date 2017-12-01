@@ -11,7 +11,7 @@ from .base import Pyse
 
 class LandlordNavPage(Pyse):
     '''房东导航集'''
-    url = "/"
+    # url = "/"
 
     #我是房东
     def Iamlandlord(self):

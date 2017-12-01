@@ -15,21 +15,6 @@ import unittest
 class TestWaitingcheckin(myunit.MyTest):
     '''待入住订单'''
 
-    def test_status(self):
-        '''进入订单详情页的并打印状态'''
-        login_page.LoginPage(self.driver).login()
-        sleep(2)
-        landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
-        sleep(2)
-        landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
-
-        po = landlord_waitingcheckin_page.LandlordWaitingcheckinPage(self.driver)
-        po.waitingcheckin()
-        po.wait_order_details()
-        print(po.wait_order_details_status())
-        assert po.wait_order_details_status()=="待入住"
-        function.insert_img(self.driver,"wait_order_status.png")
-
     def test_return_myorder(self):
         '''从订单详情页返回到我的订单列表'''
         login_page.LoginPage(self.driver).login()
@@ -45,6 +30,23 @@ class TestWaitingcheckin(myunit.MyTest):
         print(po.status())
         assert po.status()=="待入住"
         function.insert_img(self.driver,"myorder.png")
+
+    def test_status(self):
+        '''进入订单详情页的并打印状态'''
+        # login_page.LoginPage(self.driver).login()
+        # sleep(2)
+        landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
+        sleep(2)
+        # landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
+
+        po = landlord_waitingcheckin_page.LandlordWaitingcheckinPage(self.driver)
+        po.waitingcheckin()
+        po.wait_order_details()
+        print(po.wait_order_details_status())
+        assert po.wait_order_details_status()=="待入住"
+        function.insert_img(self.driver,"wait_order_status.png")
+
+
 
 if __name__ == "__main__":
     unittest.main()

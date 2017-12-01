@@ -39,12 +39,12 @@ class TestMicroshopManager(myunit.MyTest):
 
     def test_view_again(self):
         '''查看房东说明'''
-        login_page.LoginPage(self.driver).login()
-        sleep(2)
+        # login_page.LoginPage(self.driver).login()
+        # sleep(2)
         landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
         sleep(2)
-        landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
-        sleep(2)
+        # landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
+        # sleep(2)
         landlord_nav_page.LandlordNavPage(self.driver).microshopmanager()
 
         po = landlord_microshopmanager_page.LandlordMicroshopManagerPage(self.driver)

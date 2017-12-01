@@ -12,7 +12,7 @@ from .base import Pyse
 
 class LandlordWaitingcheckinPage(Pyse):
     '''待入住订单'''
-    url = "/"
+    # url = "/"
 
     #待入住订单
     def waitingcheckin(self):

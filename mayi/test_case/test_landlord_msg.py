@@ -36,12 +36,12 @@ class TestLandlordMsg(myunit.MyTest):
 
     def test_msg_record(self):
         '''打印聊天记录'''
-        login_page.LoginPage(self.driver).login()
-        sleep(2)
+        # login_page.LoginPage(self.driver).login()
+        # sleep(2)
         landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
         sleep(2)
-        landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
-        sleep(2)
+        # landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
+        # sleep(2)
         landlord_nav_page.LandlordNavPage(self.driver).msgmanager()
 
         po = landlord_msg_page.LandlordMsgPage(self.driver)

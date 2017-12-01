@@ -18,7 +18,7 @@ class TestWujiaquOrder(myunit.MyTest):
     def test_wujiaqu_order(self):
         po  = wujiaqu_order_page.WujiaquOrderPage(self.driver)
         login_page.LoginPage(self.driver).login()
-        po.opentest("https://pre.mayi.com/wujiaqu")
+        po._open(url = "/wujiaqu/")
 
         po.searchcityin1()
         sleep(2)

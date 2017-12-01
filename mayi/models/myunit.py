@@ -14,11 +14,21 @@ from mayi.models.driver import browser
 
 class MyTest(unittest.TestCase):
 
-    def setUp(self):
-        self.driver = browser()
-        self.driver.maximize_window()
+    # def setUp(self):
+    #     self.driver = browser()
+    #     self.driver.maximize_window()
+    #
+    #
+    # def tearDown(self):
+    #     self.driver.quit()
 
+    @classmethod
+    def setUpClass(cls):
+        cls.driver = browser()
+        cls.driver.maximize_window()
 
-    def tearDown(self):
-        self.driver.quit()
+    @classmethod
+    def tearDownClass(cls):
+        cls.driver.quit()
+
 

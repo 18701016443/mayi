@@ -12,7 +12,7 @@ from .base import Pyse
 
 class LandlordDeletePage(Pyse):
     '''房源删除'''
-    url = "/"
+    # url = "/"
 
     #已下线
     def roomfilter5(self):

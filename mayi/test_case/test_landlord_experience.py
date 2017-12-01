@@ -46,7 +46,7 @@ class TestExperience(myunit.MyTest):
         po.choose_oneroom()
         sleep(2)
         po.sure_add()
-
+        sleep(2)
         fabu_room_page.FabuRoomPage(self.driver).up_picture()
         sleep(2)
 

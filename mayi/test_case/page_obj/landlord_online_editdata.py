@@ -12,7 +12,7 @@ from mayi.models import mydef
 
 class LandlordOnlineEditdata(Pyse):
     '''已上线——修改资料'''
-    url = "/"
+    # url = "/"
 
     #修改资料
     def editdata(self):
@@ -64,17 +64,18 @@ class LandlordOnlineEditdata(Pyse):
 ############房源描述
 
     #地理位置编辑
-    def EditAddress(self):
-        self.click("id=>EditAddress")
+    # def EditAddress(self):
+    #     self.click("id=>EditAddress")
 
-    #弹窗确认
-    def changePosition(self):
-        self.click("id=>changePosition")
+    # #弹窗确认
+    # def changePosition(self):
+    #     self.click("id=>changePosition")
 
 
     #房源描述保存
     def fydes_save(self):
-        self.click("xpath=>html/body/div[14]/div[2]/div/div/div[2]/form/div[2]/a")
+        self.click("xpath=>//*[@id='describeform']/div[2]/a")
+
 
 ###########房源图片
 

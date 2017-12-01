@@ -10,7 +10,7 @@ class Pyse(object):
     PO模型基本类，对原生Selenium进行二次封装。
     '''
 
-    def __init__(self, selenium_driver, base_url='http://pre.mayi.com'):
+    def __init__(self, selenium_driver, base_url='http://www.mayi.com'):
         self.driver = selenium_driver
         self.base_url = base_url
         self.timeout = 30
@@ -403,6 +403,8 @@ class Pyse(object):
         try:
             e = self.get_element(css)
             self.js("var rm=document.getElementById('roomform').removeChild(document.getElementById('roomform').children[5])")
+            self.js("var rm=document.getElementById('describeform').removeChild(document.getElementById('describeform').children[15])")
+
 
         except:
             m = print("没有此div")

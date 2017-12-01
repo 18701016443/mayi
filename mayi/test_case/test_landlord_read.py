@@ -15,57 +15,6 @@ import unittest
 class TestLandlordRead(myunit.MyTest):
     '''房源管理-房东必读'''
 
-    def test_landlord_read(self):
-        '''房东规则'''
-        login_page.LoginPage(self.driver).login()
-        sleep(2)
-        landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
-        sleep(2)
-        landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
-        sleep(2)
-        landlord_nav_page.LandlordNavPage(self.driver).roommanager()
-        sleep(2)
-
-        po = landlord_read_page.LandlordReadPage(self.driver)
-        po.read()
-        sleep(2)
-        function.insert_img(self.driver,"landlord_read.png")
-
-    def test_tenant_rule(self):
-        '''房客规则'''
-        login_page.LoginPage(self.driver).login()
-        sleep(3)
-        landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
-        sleep(3)
-        landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
-        sleep(3)
-        landlord_nav_page.LandlordNavPage(self.driver).roommanager()
-        sleep(3)
-
-        po = landlord_read_page.LandlordReadPage(self.driver)
-        po.read()
-        sleep(3)
-        po.tenant_rule()
-        function.insert_img(self.driver,"tenant_rule.png")
-
-
-    def test_roomauditrule(self):
-        '''房间审核规范'''
-        login_page.LoginPage(self.driver).login()
-        sleep(3)
-        landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
-        sleep(3)
-        landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
-        sleep(3)
-        landlord_nav_page.LandlordNavPage(self.driver).roommanager()
-        sleep(3)
-
-        po = landlord_read_page.LandlordReadPage(self.driver)
-        po.read()
-        sleep(3)
-        po.roomauditrule()
-        function.insert_img(self.driver, "tenant_rule.png")
-
     def test_agreement(self):
         '''服务协议'''
         login_page.LoginPage(self.driver).login()
@@ -83,16 +32,68 @@ class TestLandlordRead(myunit.MyTest):
         po.agreement()
         print(po.agreement_text())
         sleep(2)
-        function.insert_img(self.driver, "tenant_rule.png")
+        function.insert_img(self.driver, "agreement.png")
+
+    def test_landlord_read(self):
+        '''房东规则'''
+        # login_page.LoginPage(self.driver).login()
+        # sleep(2)
+        landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
+        sleep(2)
+        # landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
+        # sleep(2)
+        landlord_nav_page.LandlordNavPage(self.driver).roommanager()
+        sleep(2)
+
+        po = landlord_read_page.LandlordReadPage(self.driver)
+        po.read()
+        sleep(2)
+        function.insert_img(self.driver,"landlord_read.png")
+
+    def test_tenant_rule(self):
+        '''房客规则'''
+        # login_page.LoginPage(self.driver).login()
+        # sleep(3)
+        landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
+        sleep(3)
+        # landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
+        # sleep(3)
+        landlord_nav_page.LandlordNavPage(self.driver).roommanager()
+        sleep(3)
+
+        po = landlord_read_page.LandlordReadPage(self.driver)
+        po.read()
+        sleep(3)
+        po.tenant_rule()
+        function.insert_img(self.driver,"tenant_rule.png")
+
+
+    def test_roomauditrule(self):
+        '''房间审核规范'''
+        # login_page.LoginPage(self.driver).login()
+        # sleep(3)
+        landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
+        sleep(3)
+        # landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
+        # sleep(3)
+        landlord_nav_page.LandlordNavPage(self.driver).roommanager()
+        sleep(3)
+
+        po = landlord_read_page.LandlordReadPage(self.driver)
+        po.read()
+        sleep(3)
+        po.roomauditrule()
+        function.insert_img(self.driver, "roomauditrule.png")
+
 
     def test_privacypolicy(self):
         '''隐私条款'''
-        login_page.LoginPage(self.driver).login()
-        sleep(3)
+        # login_page.LoginPage(self.driver).login()
+        # sleep(3)
         landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
         sleep(3)
-        landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
-        sleep(3)
+        # landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
+        # sleep(3)
         landlord_nav_page.LandlordNavPage(self.driver).roommanager()
         sleep(3)
 
@@ -100,7 +101,26 @@ class TestLandlordRead(myunit.MyTest):
         po.read()
         sleep(3)
         po.privacypolicy()
-        function.insert_img(self.driver, "tenant_rule.png")
+        print(po.privacypolicy_text())
+        function.insert_img(self.driver, "privacypolicy.png")
+
+    def test_disclaimer(self):
+        '''免责声明'''
+        # login_page.LoginPage(self.driver).login()
+        # sleep(3)
+        landlord_nav_page.LandlordNavPage( self.driver ).Iamlandlord()
+        sleep( 3 )
+        # landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
+        # sleep(3)
+        landlord_nav_page.LandlordNavPage( self.driver ).roommanager()
+        sleep( 3 )
+
+        po = landlord_read_page.LandlordReadPage( self.driver )
+        po.read()
+        sleep( 3 )
+        po.disclaimer()
+        print( po.disclaimer_text() )
+        function.insert_img( self.driver, "disclaimer.png" )
 
 
 if __name__ == "__main__":

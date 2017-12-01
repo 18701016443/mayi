@@ -11,7 +11,7 @@ from .base import Pyse
 
 class LandlordActivity(Pyse):
     '''活动设置'''
-    url = "/"
+    # url = "/"
 
     #活动页面文案
     def text(self):

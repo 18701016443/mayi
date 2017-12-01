@@ -144,7 +144,7 @@ class TestQR(myunit.MyTest):
         p = "APP50下载页面的二维码"
         po = mayi_QR_page.MaYiQRPage(self.driver)
 
-        url = jiexi_QR.decode_qr("http://staticnew.mayi.com/resourcesWeb/topic/app50/images/fkerwei.png")
+        url = jiexi_QR.decode_qr("http://staticnew.mayi.com/resourcesWeb/topic/app50/images/ewm.png")
         sleep(3)
         # 打开解析后的下载地址
         po.opentest(url)
@@ -241,9 +241,9 @@ class TestQR(myunit.MyTest):
         '''14房客我的订单右侧二维码'''
         p = "房客我的订单右侧二维码"
         po = mayi_QR_page.MaYiQRPage(self.driver)
-        po.opentest("http://www.mayi.com/")
-        self.login_online()
-        sleep(3)
+        # po.opentest("http://www.mayi.com/")
+        # self.login_online()
+        # sleep(3)
         tenant_nav_page.TenantNavPage(self.driver).Iamtenant()
 
 

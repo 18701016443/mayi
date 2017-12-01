@@ -15,49 +15,8 @@ import unittest
 class TestDelete(myunit.MyTest):
     '''房源删除'''
 
-    def test_room_delete(self):
-        '''已上线——删除房源'''
-        login_page.LoginPage(self.driver).login()
-        sleep(2)
-        landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
-        sleep(2)
-        landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
-        sleep(2)
-        landlord_nav_page.LandlordNavPage(self.driver).roommanager()
-
-        po = landlord_delete_page.LandlordDeletePage(self.driver)
-        po.room_delete()
-        sleep(1)
-        po.delBtn()
-        sleep(2)
-        print(po.delsuccess_text())
-        assert po.delsuccess_text()=="删除成功！"
-        function.insert_img(self.driver,"delete.png")
-        po.okDelSuccessBtn()
-
-    def test_offlineroom_delete(self):
-        '''已下线——删除房源'''
-        login_page.LoginPage(self.driver).login()
-        sleep(2)
-        landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
-        sleep(2)
-        landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
-        sleep(2)
-        landlord_nav_page.LandlordNavPage(self.driver).roommanager()
-
-        po = landlord_delete_page.LandlordDeletePage(self.driver)
-        po.roomfilter5()
-        po.room_delete()
-        sleep(1)
-        po.delBtn()
-        sleep(2)
-        print(po.delsuccess_text())
-        assert po.delsuccess_text()=="删除成功！"
-        function.insert_img(self.driver,"delete.png")
-        po.okDelSuccessBtn()
-
     def test_checkingroom_delete(self):
-        '''审核中——删除房源'''
+        '''①审核中——删除房源'''
         login_page.LoginPage(self.driver).login()
         sleep(2)
         landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
@@ -78,19 +37,62 @@ class TestDelete(myunit.MyTest):
         function.insert_img(self.driver,"delete.png")
         po.okDelSuccessBtn()
 
+    def test_room_delete(self):
+        '''已上线——删除房源'''
+        # login_page.LoginPage(self.driver).login()
+        # sleep(2)
+        landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
+        sleep(2)
+        # landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
+        # sleep(2)
+        landlord_nav_page.LandlordNavPage(self.driver).roommanager()
+
+        po = landlord_delete_page.LandlordDeletePage(self.driver)
+        po.room_delete()
+        sleep(1)
+        po.delBtn()
+        sleep(2)
+        print(po.delsuccess_text())
+        assert po.delsuccess_text()=="删除成功！"
+        function.insert_img(self.driver,"delete.png")
+        po.okDelSuccessBtn()
+
+    def test_offlineroom_delete(self):
+        '''已下线——删除房源'''
+        # login_page.LoginPage(self.driver).login()
+        # sleep(2)
+        landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
+        sleep(2)
+        # landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
+        # sleep(2)
+        landlord_nav_page.LandlordNavPage(self.driver).roommanager()
+
+        po = landlord_delete_page.LandlordDeletePage(self.driver)
+        po.roomfilter5()
+        sleep(2)
+        po.room_delete()
+        sleep(1)
+        po.delBtn()
+        sleep(2)
+        print(po.delsuccess_text())
+        assert po.delsuccess_text()=="删除成功！"
+        function.insert_img(self.driver,"delete.png")
+        po.okDelSuccessBtn()
+
 
     def test_nopassroom_delete(self):
         '''未通过——删除房源'''
-        login_page.LoginPage(self.driver).login()
-        sleep(2)
+        # login_page.LoginPage(self.driver).login()
+        # sleep(2)
         landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
         sleep(2)
-        landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
-        sleep(2)
+        # landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
+        # sleep(2)
         landlord_nav_page.LandlordNavPage(self.driver).roommanager()
 
         po = landlord_delete_page.LandlordDeletePage(self.driver)
         po.roomfilter3()
+        sleep(2)
         po.checking_delete()
         sleep(1)
         po.delBtn()
@@ -102,16 +104,17 @@ class TestDelete(myunit.MyTest):
 
     def test_need_complete_delete(self):
         '''待完善——删除房源'''
-        login_page.LoginPage(self.driver).login()
-        sleep(2)
+        # login_page.LoginPage(self.driver).login()
+        # sleep(2)
         landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
         sleep(2)
-        landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
-        sleep(2)
+        # landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
+        # sleep(2)
         landlord_nav_page.LandlordNavPage(self.driver).roommanager()
 
         po = landlord_delete_page.LandlordDeletePage(self.driver)
         po.roomfilter1()
+        sleep(2)
         po.need_complete_delete()
         sleep(1)
         po.delBtn()

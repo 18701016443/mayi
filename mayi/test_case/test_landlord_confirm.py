@@ -16,12 +16,12 @@ class TestLandlordConfiem(myunit.MyTest):
     '''待确认订单'''
 
     def test_confirm(self):
-        '''确认订单'''
-        login_page.LoginPage(self.driver).login()
-        sleep(2)
+        '''②确认订单'''
+        # login_page.LoginPage(self.driver).login()
+        # sleep(2)
         landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
         sleep(2)
-        landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
+        # landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
         po = landlord_confirm_page.LandlordConfirmPage(self.driver)
         po.confirm()
         po.confirm_btn()
@@ -32,7 +32,7 @@ class TestLandlordConfiem(myunit.MyTest):
 
 
     def test_cancel(self):
-        '''确认订单-以后再说'''
+        '''①确认订单-以后再说'''
         login_page.LoginPage(self.driver).login()
         sleep(2)
         landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
@@ -46,12 +46,12 @@ class TestLandlordConfiem(myunit.MyTest):
 
 
     def test_refuse(self):
-        '''拒绝订单'''
-        login_page.LoginPage(self.driver).login()
-        sleep(2)
+        '''⑤拒绝订单'''
+        # login_page.LoginPage(self.driver).login()
+        # sleep(2)
         landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
         sleep(2)
-        landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
+        # landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
         po = landlord_confirm_page.LandlordConfirmPage(self.driver)
         po.confirm()
         po.refuse()
@@ -60,12 +60,12 @@ class TestLandlordConfiem(myunit.MyTest):
         po.refuse_order()
 
     def test_refuse_cancel(self):
-        '''拒绝-取消按钮'''
-        login_page.LoginPage(self.driver).login()
-        sleep(2)
+        '''⑥拒绝-取消按钮'''
+        # login_page.LoginPage(self.driver).login()
+        # sleep(2)
         landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
         sleep(2)
-        landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
+        # landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
         po = landlord_confirm_page.LandlordConfirmPage(self.driver)
         po.confirm()
         po.refuse()
@@ -73,12 +73,12 @@ class TestLandlordConfiem(myunit.MyTest):
         po.refuse_cancel()
 
     def test_return_myorder(self):
-        '''订单详情页-返回我的订单'''
-        login_page.LoginPage(self.driver).login()
-        sleep(2)
+        '''⑦订单详情页-返回我的订单'''
+        # login_page.LoginPage(self.driver).login()
+        # sleep(2)
         landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
         sleep(2)
-        landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
+        # landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
         po = landlord_confirm_page.LandlordConfirmPage(self.driver)
         po.confirm()
         po.order_details()
@@ -87,12 +87,12 @@ class TestLandlordConfiem(myunit.MyTest):
 
 
     def test_order_details_confirm(self):
-        '''订单详情页-确认订单'''
-        login_page.LoginPage(self.driver).login()
-        sleep(2)
+        '''③订单详情页-确认订单'''
+        # login_page.LoginPage(self.driver).login()
+        # sleep(2)
         landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
         sleep(2)
-        landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
+        # landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
         po = landlord_confirm_page.LandlordConfirmPage(self.driver)
         po.confirm()
         po.order_details()
@@ -102,12 +102,12 @@ class TestLandlordConfiem(myunit.MyTest):
         po.alert_order_details_confirm()
 
     def test_order_details_refuse(self):
-        '''订单详情页-拒绝'''
-        login_page.LoginPage(self.driver).login()
-        sleep(2)
+        '''④订单详情页-拒绝'''
+        # login_page.LoginPage(self.driver).login()
+        # sleep(2)
         landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
         sleep(2)
-        landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
+        # landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
         po = landlord_confirm_page.LandlordConfirmPage(self.driver)
         po.confirm()
         po.order_details()

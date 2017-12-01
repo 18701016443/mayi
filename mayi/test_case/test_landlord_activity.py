@@ -38,15 +38,15 @@ class TestActivity(myunit.MyTest):
 
     def test_regular_desc(self):
         '''活动规则'''
-        login_page.LoginPage(self.driver).login()
-        sleep(2)
+        # login_page.LoginPage(self.driver).login()
+        # sleep(2)
         landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
         sleep(2)
-        landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
-        sleep(2)
+        # landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
+        # sleep(2)
         landlord_nav_page.LandlordNavPage(self.driver).activitymanager()
         sleep(1)
-        landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
+        # landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
 
         po = landlord_activity_page.LandlordActivity(self.driver)
         sleep(2)

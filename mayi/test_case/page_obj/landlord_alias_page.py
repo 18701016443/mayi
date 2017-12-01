@@ -12,7 +12,7 @@ from mayi.models import mydef
 
 class LandlordAliasPage(Pyse):
     '''房源管理-设置别名'''
-    url = "/"
+    # url = "/"
 
     #设置别名
     def alias(self):

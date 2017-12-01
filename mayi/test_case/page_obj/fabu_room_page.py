@@ -14,7 +14,7 @@ from time import sleep
 
 class FabuRoomPage(Pyse):
     '''免费发布房源'''
-    url = "/"
+    # url = "/"
 
 # **********第一步定位开始**********
 
@@ -222,7 +222,7 @@ class FabuRoomPage(Pyse):
         num = mydef.rad_num(1,5)
         self.click("xpath=>//*[@id='weekendtype']/option["+num+"]")
         if num !=1:
-            weekendprice = mydef.rad_num(60,9999)
+            weekendprice = mydef.rad_num(60,200)
             self.clear("id=>weekendprice")
             self.type("id=>weekendprice",weekendprice)
 

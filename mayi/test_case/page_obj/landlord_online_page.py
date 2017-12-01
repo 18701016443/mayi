@@ -11,7 +11,7 @@ from .base import Pyse
 
 class LandlordOnlinePage(Pyse):
     '''房源上线'''
-    url = "/"
+    # url = "/"
 
     #已下线
     def roomfilter5(self):

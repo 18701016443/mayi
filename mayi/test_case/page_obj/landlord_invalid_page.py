@@ -11,7 +11,7 @@ from .base import Pyse
 
 class LandlordInvalidPage(Pyse):
     '''失效订单'''
-    url = "/"
+    # url = "/"
 
     #失效订单
     def invalid(self):

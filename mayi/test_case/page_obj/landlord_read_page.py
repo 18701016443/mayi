@@ -31,11 +31,25 @@ class LandlordReadPage(Pyse):
 
     #服务器协议文案
     def agreement_text(self):
-        text = self.get_text("xpath=>/html/body/div[14]")
+        text = self.get_text("css=>.main.mb30.c_gray_dark")
         return text
 
     #隐私条款
     def privacypolicy(self):
         self.click("xpath=>/html/body/ul/li[5]/a")
+
+    # 隐私条款文案
+    def privacypolicy_text(self):
+        text = self.get_text("css=>.main.mb30.c_gray_dark")
+        return text
+
+    #免责声明
+    def disclaimer(self):
+        self.click("xpath=>/html/body/ul/li[6]/a")
+
+    # 免责声明文案
+    def disclaimer_text(self):
+        text = self.get_text( "css=>.main.mb30.c_gray_dark" )
+        return text
 
 

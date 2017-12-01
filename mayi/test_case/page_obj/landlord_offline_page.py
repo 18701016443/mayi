@@ -11,7 +11,7 @@ from .base import Pyse
 
 class LandlordOfflinePage(Pyse):
     '''房源下线'''
-    url = "/"
+    # url = "/"
 
     #房源下线
     def room_offline(self):

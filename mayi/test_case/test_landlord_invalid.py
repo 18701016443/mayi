@@ -29,11 +29,11 @@ class TestInvalid(myunit.MyTest):
 
     def test_return_myorder(self):
         '''返回我的订单并打印第一个订单的状态'''
-        login_page.LoginPage(self.driver).login()
-        sleep(2)
+        # login_page.LoginPage(self.driver).login()
+        # sleep(2)
         landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
         sleep(2)
-        landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
+        # landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
         po = landlord_invalid_page.LandlordInvalidPage(self.driver)
         po.invalid()
         po.invalid_order_details()

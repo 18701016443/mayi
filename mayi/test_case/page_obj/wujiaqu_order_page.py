@@ -12,7 +12,7 @@ from mayi.models import mydef
 
 class WujiaquOrderPage(Pyse):
     '''五家渠下订单'''
-    url = "/wujiaqu/"
+    # url = "/wujiaqu/"
 
     #关键词
     def searchcityin1(self):

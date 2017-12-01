@@ -31,11 +31,11 @@ class TestLandlordSerach(myunit.MyTest):
 
     def test_orderid_or_phone(self):
         '''按手机号或订单号搜索'''
-        login_page.LoginPage(self.driver).login()
-        sleep(3)
+        # login_page.LoginPage(self.driver).login()
+        # sleep(3)
         landlord_nav_page.LandlordNavPage(self.driver).Iamlandlord()
-        landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
-        sleep(4)
+        # landlord_nav_page.LandlordNavPage(self.driver).close_weiChat()
+        # sleep(4)
         po = landlord_serach_page.LandlordSerachPage(self.driver)
         list = ["18701016443","853519722 "]
         for orderOrMoblie in list:

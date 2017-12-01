@@ -12,7 +12,7 @@ from .base import Pyse
 class LandlordRefundPage(Pyse):
     '''退款订单'''
 
-    url = "/"
+    # url = "/"
 
     #退款订单
     def refund(self):

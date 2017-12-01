@@ -1,67 +1,1048 @@
-1511518164362	geckodriver	INFO	geckodriver 0.19.0
-1511518164362	geckodriver	INFO	Listening on 127.0.0.1:51804
-1511518166442	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\admin\\AppData\\Local\\Temp\\rust_mozprofile.Su2708Crn0rs"
-1511518166956	Marionette	INFO	Enabled via --marionette
-[Child 1744, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 1744, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-1511518168238	Marionette	INFO	Listening on port 51811
-1511518168519	Marionette	WARN	TLS certificate errors will be ignored for this session
-1511518168577	Marionette	DEBUG	Register listener.js for window 4294967297
-1511518172122	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
-1511518172242	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
-1511518172242	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
-1511518173043	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/"
+1511775204713	geckodriver	INFO	geckodriver 0.19.0
+1511775204719	geckodriver	INFO	Listening on 127.0.0.1:59097
+1511775206804	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\admin\\AppData\\Local\\Temp\\rust_mozprofile.XK3G51IAdli9"
+1511775207200	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1511775207518	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+[Child 2804] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2804] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511775209104	Marionette	INFO	Listening on port 59104
+1511775209936	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511775209968	Marionette	DEBUG	Register listener.js for window 6442450945
+1511775210018	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511775210299	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511775210299	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511775211176	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/"
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
 JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
-1511518186905	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/"
-1511518187198	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
-1511518187492	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
-1511518187775	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
-1511518195997	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/"
-1511518196106	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/"
-1511518196109	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/"
-1511518196302	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967311"
-1511518196303	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967308"
-1511518196303	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967313"
-1511518196303	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967305"
-1511518196304	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967301"
-1511518196305	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967303"
-1511518198815	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/"
+1511775223151	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/"
+1511775223464	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775223753	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775224108	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775232380	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
 JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
-1511518199758	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/"
-1511518199769	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/"
-1511518200001	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/"
-1511518200004	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/"
-1511518201326	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967323"
-1511518201327	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967318"
-1511518201327	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967320"
-JavaScript warning: https://static-ssl.mediav.com/mv.js, line 1: unreachable code after return statement
-1511518205374	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://pre.mayi.com/wujiaqu"
-1511518206951	Marionette	DEBUG	Received DOM event "pageshow" for "https://pre.mayi.com/wujiaqu"
-1511518209145	Marionette	DEBUG	Received DOM event "beforeunload" for "https://pre.mayi.com/wujiaqu"
-1511518209298	Marionette	DEBUG	Received DOM event "pagehide" for "https://pre.mayi.com/wujiaqu"
-1511518209300	Marionette	DEBUG	Received DOM event "unload" for "https://pre.mayi.com/wujiaqu"
-JavaScript warning: https://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
-1511518212212	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967331"
-1511518212213	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967326"
-1511518212213	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967328"
-JavaScript warning: https://static-ssl.mediav.com/mv.js, line 1: unreachable code after return statement
-1511518212901	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://pre.mayi.com/room/851272901?s=%E5%BC%A0%E4%BD%B3%E6%81%92%E6%B5%8B%E8%AF%95"
-1511518259450	Marionette	DEBUG	Received DOM event "pageshow" for "https://pre.mayi.com/room/851272901?s=%E5%BC%A0%E4%BD%B3%E6%81%92%E6%B5%8B%E8%AF%95"
-1511518262617	Marionette	DEBUG	Received DOM event "beforeunload" for "https://pre.mayi.com/room/851272901?s=%E5%BC%A0%E4%BD%B3%E6%81%92%E6%B5%8B%E8%AF%95"
-1511518263121	Marionette	DEBUG	Received DOM event "pagehide" for "https://pre.mayi.com/room/851272901?s=%E5%BC%A0%E4%BD%B3%E6%81%92%E6%B5%8B%E8%AF%95"
-1511518263129	Marionette	DEBUG	Received DOM event "unload" for "https://pre.mayi.com/room/851272901?s=%E5%BC%A0%E4%BD%B3%E6%81%92%E6%B5%8B%E8%AF%95"
-JavaScript warning: https://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
-1511518263682	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967334"
-1511518263683	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967336"
-1511518263684	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967338"
-1511518264029	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://pre.mayi.com/order/waitinit/room-851272901_roomnum-1_checkinday-2017-11-24_checkoutday-2017-11-25#"
-1511518264340	Marionette	DEBUG	Received DOM event "pageshow" for "https://pre.mayi.com/order/waitinit/room-851272901_roomnum-1_checkinday-2017-11-24_checkoutday-2017-11-25#"
-1511518288670	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
-1511518289802	Marionette	DEBUG	Received DOM event "beforeunload" for "https://pre.mayi.com/order/waitinit/room-851272901_roomnum-1_checkinday-2017-11-24_checkoutday-2017-11-25#"
-1511518290022	Marionette	DEBUG	Received DOM event "pagehide" for "https://pre.mayi.com/order/waitinit/room-851272901_roomnum-1_checkinday-2017-11-24_checkoutday-2017-11-25#"
-1511518290034	Marionette	DEBUG	Received DOM event "unload" for "https://pre.mayi.com/order/waitinit/room-851272901_roomnum-1_checkinday-2017-11-24_checkoutday-2017-11-25#"
-JavaScript warning: https://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
-1511518290253	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967343"
-1511518290253	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967345"
-1511518290464	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://pre.mayi.com/order/fastwaitpay/854195111?isVisitorFlag=false"
-1511518290597	Marionette	DEBUG	Received DOM event "pageshow" for "https://pre.mayi.com/order/fastwaitpay/854195111?isVisitorFlag=false"
+1511775237582	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/"
+1511775237719	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/"
+1511775237721	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511775238098	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450971"
+1511775238099	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450966"
+1511775238099	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450968"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511775238622	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/room/publish/basicinfo"
+1511775239019	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/room/publish/basicinfo"
+1511775241296	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775243524	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775245758	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775248042	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775250270	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775250530	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775252805	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775253034	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775253261	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775255500	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775255722	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775255953	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775256180	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775256466	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775256741	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775257021	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775257267	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775257535	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775257817	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775258089	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775258335	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775258572	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775258809	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775259048	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775259312	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775259568	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775259839	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775261966	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/room/publish/basicinfo"
+1511775262164	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/room/publish/basicinfo"
+1511775262167	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/room/publish/basicinfo"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511775262297	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450974"
+1511775262297	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450976"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511775262508	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/room/publish/detailinfo/851690200"
+1511775262655	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/room/publish/detailinfo/851690200"
+1511775275146	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/room/publish/detailinfo/851690200"
+1511775275282	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/room/publish/detailinfo/851690200"
+1511775275286	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/room/publish/detailinfo/851690200"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511775275452	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450980"
+1511775275452	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450982"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511775275674	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/room/publish/imageinfo/851690200"
+1511775275822	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/room/publish/imageinfo/851690200"
+1511775276078	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775282747	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775289323	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775295645	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775302039	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775308448	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775314751	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775323086	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775353490	geckodriver	INFO	geckodriver 0.19.0
+1511775353496	geckodriver	INFO	Listening on 127.0.0.1:59495
+1511775355530	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\admin\\AppData\\Local\\Temp\\rust_mozprofile.t2rXyAUt03q0"
+1511775355903	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1511775356217	Marionette	INFO	Enabled via --marionette
+1511775357808	Marionette	INFO	Listening on port 59501
+1511775358674	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511775358710	Marionette	DEBUG	Register listener.js for window 6442450945
+1511775358764	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511775358832	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511775358832	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511775361171	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/"
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511775371767	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/"
+1511775372116	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775372383	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775372727	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775380951	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/"
+1511775381044	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/"
+1511775381048	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/"
+1511775381164	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450959"
+1511775381164	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450956"
+1511775381164	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450961"
+1511775381165	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450949"
+1511775381165	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450951"
+1511775381165	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450953"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511775383581	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/"
+1511775384140	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/"
+1511775386238	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/"
+1511775386664	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/"
+1511775386666	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511775386857	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450971"
+1511775386857	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450966"
+1511775386857	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450968"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511775387285	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/landlord/856847590/orders"
+1511775389004	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/landlord/856847590/orders"
+1511775391252	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775393341	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/landlord/856847590/orders"
+1511775393450	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/landlord/856847590/orders"
+1511775393455	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/landlord/856847590/orders"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511775393620	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450974"
+1511775393620	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450976"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511775393941	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/user/landlord/features/experience/getList"
+1511775394077	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/user/landlord/features/experience/getList"
+1511775396328	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775396409	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/user/landlord/features/experience/getList"
+1511775396503	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/user/landlord/features/experience/getList"
+1511775396508	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/user/landlord/features/experience/getList"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/fdexperience/tiyanCreate.js, line 345: unreachable code after return statement
+1511775396685	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450980"
+1511775396686	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450982"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511775397088	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/user/landlord/features/experience/createview"
+1511775397517	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/user/landlord/features/experience/createview"
+1511775399812	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775402272	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775404513	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775406996	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775409263	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775409488	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775411720	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775411745	Marionette	INFO	New connections will no longer be accepted
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1511775463031	geckodriver	INFO	geckodriver 0.19.0
+1511775463037	geckodriver	INFO	Listening on 127.0.0.1:59858
+1511775465079	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\admin\\AppData\\Local\\Temp\\rust_mozprofile.XG7nB6S5xgIy"
+1511775465434	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1511775465751	Marionette	INFO	Enabled via --marionette
+1511775467205	Marionette	INFO	Listening on port 59866
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+[Child 5816] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5816] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511775468207	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511775468246	Marionette	DEBUG	Register listener.js for window 6442450945
+1511775468285	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511775468304	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511775468306	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511775468312	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/"
+1511775468315	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/"
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+[Child 10984] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+1511775472425	geckodriver::marionette	ERROR	Failed to kill browser process
+1511775633707	geckodriver	INFO	geckodriver 0.19.0
+1511775633714	geckodriver	INFO	Listening on 127.0.0.1:60004
+1511775635788	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\admin\\AppData\\Local\\Temp\\rust_mozprofile.K11C74ZLFv6D"
+1511775636180	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1511775636495	Marionette	INFO	Enabled via --marionette
+1511775638018	Marionette	INFO	Listening on port 60010
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+[Child 2820] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2820] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511775638912	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511775638942	Marionette	DEBUG	Register listener.js for window 6442450945
+1511775638985	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511775639093	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511775639093	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511775640198	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/"
+1511775652138	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/"
+1511775652460	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775652699	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775653001	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775661268	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/"
+1511775661377	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/"
+1511775661380	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/"
+1511775661485	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450962"
+1511775661485	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450950"
+1511775661485	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450959"
+1511775661485	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450949"
+1511775661486	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450952"
+1511775661486	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450955"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511775664366	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/"
+1511775665169	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/"
+1511775667344	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/"
+1511775668015	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/"
+1511775668019	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511775668248	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450971"
+1511775668249	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450966"
+1511775668249	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450968"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511775668577	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/landlord/856847590/orders"
+1511775670324	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/landlord/856847590/orders"
+1511775672612	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775674652	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/landlord/856847590/orders"
+1511775674787	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/landlord/856847590/orders"
+1511775674795	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/landlord/856847590/orders"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511775674978	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450974"
+1511775674978	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450976"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511775675344	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/user/landlord/features/experience/getList"
+1511775675426	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/user/landlord/features/experience/getList"
+1511775677700	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775677760	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/user/landlord/features/experience/getList"
+1511775677845	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/user/landlord/features/experience/getList"
+1511775677848	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/user/landlord/features/experience/getList"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/fdexperience/tiyanCreate.js, line 345: unreachable code after return statement
+1511775678003	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450980"
+1511775678003	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450982"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511775678343	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/user/landlord/features/experience/createview"
+1511775678757	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/user/landlord/features/experience/createview"
+1511775681016	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775683421	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775685645	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775687983	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775690249	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775690475	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775692722	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775692743	Marionette	INFO	New connections will no longer be accepted
+1511775788700	geckodriver	INFO	geckodriver 0.19.0
+1511775788707	geckodriver	INFO	Listening on 127.0.0.1:60427
+1511775790755	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\admin\\AppData\\Local\\Temp\\rust_mozprofile.48Xp675E8XWo"
+1511775791122	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1511775791436	Marionette	INFO	Enabled via --marionette
+1511775792869	Marionette	INFO	Listening on port 60433
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+[Child 6884] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6884] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511775793885	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511775793927	Marionette	DEBUG	Register listener.js for window 6442450945
+1511775793965	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511775794043	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511775794043	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511775794979	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/"
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511775809095	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/"
+1511775809405	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775809647	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775809964	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775818215	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/"
+1511775818358	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/"
+1511775818362	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/"
+1511775818478	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450962"
+1511775818478	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450951"
+1511775818478	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450958"
+1511775818479	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450949"
+1511775818481	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450953"
+1511775818481	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450955"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511775820627	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/"
+1511775823997	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/"
+1511775826125	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/"
+1511775826345	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/"
+1511775826349	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511775826759	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450973"
+1511775826759	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450971"
+1511775826760	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450966"
+1511775826760	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450968"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511775827038	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/landlord/856847590/orders"
+1511775828230	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/landlord/856847590/orders"
+1511775830532	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775832569	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/landlord/856847590/orders"
+1511775832653	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/landlord/856847590/orders"
+1511775832655	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/landlord/856847590/orders"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511775832808	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450977"
+1511775832808	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450979"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511775833209	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/user/landlord/features/experience/getList"
+1511775833263	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/user/landlord/features/experience/getList"
+1511775835546	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775835621	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/user/landlord/features/experience/getList"
+1511775835690	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/user/landlord/features/experience/getList"
+1511775835693	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/user/landlord/features/experience/getList"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/fdexperience/tiyanCreate.js, line 345: unreachable code after return statement
+1511775835855	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450983"
+1511775835856	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450985"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511775836240	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/user/landlord/features/experience/createview"
+1511775836370	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/user/landlord/features/experience/createview"
+1511775838637	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775841060	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775843302	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775845668	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775847900	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775848123	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775850378	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511775852420	Marionette	INFO	New connections will no longer be accepted
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 7424] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511832410255	geckodriver	INFO	geckodriver 0.19.0
+1511832410268	geckodriver	INFO	Listening on 127.0.0.1:63541
+1511832412345	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\admin\\AppData\\Local\\Temp\\rust_mozprofile.1wLYfMWWQ4KJ"
+1511832412963	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1511832413312	Marionette	INFO	Enabled via --marionette
+1511832415020	Marionette	INFO	Listening on port 63548
+1511832415522	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511832415560	Marionette	DEBUG	Register listener.js for window 6442450945
+1511832415603	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511832415677	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511832415677	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511832416403	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/"
+1511832427993	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/"
+1511832428325	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511832428571	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511832428876	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511832437193	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511832467594	Marionette	INFO	New connections will no longer be accepted
+1511832637955	geckodriver	INFO	geckodriver 0.19.0
+1511832637962	geckodriver	INFO	Listening on 127.0.0.1:63790
+1511832640037	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\admin\\AppData\\Local\\Temp\\rust_mozprofile.gcB5d0NmLBEB"
+1511832640394	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1511832640704	Marionette	INFO	Enabled via --marionette
+1511832642157	Marionette	INFO	Listening on port 63796
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+[Child 6304] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6304] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511832643173	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511832643219	Marionette	DEBUG	Register listener.js for window 6442450945
+1511832643252	Marionette	INFO	New connections will no longer be accepted
+1511832746230	geckodriver	INFO	geckodriver 0.19.0
+1511832746236	geckodriver	INFO	Listening on 127.0.0.1:63842
+1511832748327	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\admin\\AppData\\Local\\Temp\\rust_mozprofile.0AvuRkrseSLl"
+1511832748669	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1511832748974	Marionette	INFO	Enabled via --marionette
+1511832750417	Marionette	INFO	Listening on port 63848
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+[Child 11224] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11224] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511832751463	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511832751521	Marionette	DEBUG	Register listener.js for window 6442450945
+1511832751562	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511832751629	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511832751629	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511832752362	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/"
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511832764552	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/"
+1511832764895	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511832765156	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511832765470	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511832773700	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/"
+1511832773784	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/"
+1511832773787	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/"
+1511832773901	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450959"
+1511832773902	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450956"
+1511832773902	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450962"
+1511832773902	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450949"
+1511832773902	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450951"
+1511832773903	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450953"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511832776912	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/"
+1511832777729	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1511832952626	geckodriver	INFO	geckodriver 0.19.0
+1511832952631	geckodriver	INFO	Listening on 127.0.0.1:64277
+1511832954678	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\admin\\AppData\\Local\\Temp\\rust_mozprofile.f2EUNge7REX9"
+1511832955040	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1511832955378	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+[Child 6864] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6864] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511832956816	Marionette	INFO	Listening on port 64283
+1511832957811	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511832957843	Marionette	DEBUG	Register listener.js for window 6442450945
+1511832957882	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511832957952	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511832957953	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511832958943	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/"
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511832973664	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/"
+1511832973971	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511832974215	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511832974524	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511832982805	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511832982817	Marionette	INFO	New connections will no longer be accepted
+1511833023562	geckodriver	INFO	geckodriver 0.19.0
+1511833023568	geckodriver	INFO	Listening on 127.0.0.1:64432
+1511833025600	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\admin\\AppData\\Local\\Temp\\rust_mozprofile.nb8mptTUKUMD"
+1511833025941	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1511833026260	Marionette	INFO	Enabled via --marionette
+1511833027731	Marionette	INFO	Listening on port 64438
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+[Child 10540] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10540] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511833028743	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511833028788	Marionette	DEBUG	Register listener.js for window 6442450945
+1511833028833	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511833028935	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511833028935	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511833029886	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/"
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 5428] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+[Child 10348] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511833055452	Marionette	INFO	New connections will no longer be accepted
+1511833055452	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450959"
+1511833055452	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450955"
+1511833055452	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450962"
+1511833055453	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450953"
+1511833055453	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450949"
+1511833055453	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450951"
+1511833055454	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450945"
+1511833076221	geckodriver	INFO	geckodriver 0.19.0
+1511833076227	geckodriver	INFO	Listening on 127.0.0.1:64580
+1511833078329	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\admin\\AppData\\Local\\Temp\\rust_mozprofile.6dalyOkDU2J0"
+1511833078689	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1511833079045	Marionette	INFO	Enabled via --marionette
+1511833080687	Marionette	INFO	Listening on port 64586
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+[Child 4964] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 4964] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511833081472	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511833081518	Marionette	DEBUG	Register listener.js for window 6442450945
+1511833081559	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511833081621	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511833081621	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511833082724	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/"
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+JavaScript error: http://webchat.7moor.com/view/moor_chat.html?v=20171116-2&clientId=&urlTitle=%E3%80%90%E8%9A%82%E8%9A%81%E7%9F%AD%E7%A7%9F%E3%80%91%E7%9F%AD%E7%A7%9F%E6%88%BF_%E7%9F%AD%E7%A7%9F%E5%85%AC%E5%AF%93_%E6%B0%91%E5%AE%BF_%E5%AE%B6%E5%BA%AD%E6%97%85%E9%A6%86_%E6%97%A5%E7%A7%9F%E6%88%BF-%E9%A2%84%E8%AE%A2%E9%A6%96%E9%80%89&fromUrl=http%3A%2F%2Fpre.mayi.com%2F&serviceStates=1&accessId=73859f20-f357-11e6-b43e-3b18b16942dc&styleColor=19CAA6&peers=%5B%7B%22name%22%3A%22%E5%9C%A8%E7%BA%BF%E6%9C%8D%E5%8A%A1%22%2C%22id%22%3A%2210016609%22%2C%22status%22%3A%22enable%22%7D%5D&otherParams=&seoSource=%E7%AB%99%E5%86%85&seoKeywords=&companyName=%E8%9A%82%E8%9A%81%E7%9F%AD%E7%A7%9F, line 261: ReferenceError: $ is not defined
+1511833104851	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/"
+1511833105166	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511833105401	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511833105729	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511833113965	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/"
+1511833114061	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/"
+1511833114065	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/"
+1511833114165	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450959"
+1511833114166	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450955"
+1511833114166	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450962"
+1511833114166	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450949"
+1511833114166	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450951"
+1511833114166	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450953"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511833116558	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/"
+1511833117000	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/"
+1511833117008	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/"
+1511833117180	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/"
+1511833117183	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/"
+1511833117303	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450971"
+1511833117303	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450966"
+1511833117303	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450968"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511833117813	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/wujiaqu/"
+1511833118913	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/wujiaqu/"
+1511833121093	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/wujiaqu/"
+1511833121241	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/wujiaqu/"
+1511833121245	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/wujiaqu/"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511833123421	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450979"
+1511833123425	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450974"
+1511833123425	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450976"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511833124122	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/room/851272901?s=%E5%BC%A0%E4%BD%B3%E6%81%92%E6%B5%8B%E8%AF%95"
+1511833128306	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/room/851272901?s=%E5%BC%A0%E4%BD%B3%E6%81%92%E6%B5%8B%E8%AF%95"
+1511833131440	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/room/851272901?s=%E5%BC%A0%E4%BD%B3%E6%81%92%E6%B5%8B%E8%AF%95"
+1511833132103	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/room/851272901?s=%E5%BC%A0%E4%BD%B3%E6%81%92%E6%B5%8B%E8%AF%95"
+1511833132115	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/room/851272901?s=%E5%BC%A0%E4%BD%B3%E6%81%92%E6%B5%8B%E8%AF%95"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511833132638	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450982"
+1511833132639	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450984"
+1511833132639	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450987"
+1511833132941	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/order/waitinit/room-851272901_roomnum-1_checkinday-2017-11-28_checkoutday-2017-11-29#"
+1511833133209	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/order/waitinit/room-851272901_roomnum-1_checkinday-2017-11-28_checkoutday-2017-11-29#"
+1511833139575	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511833140714	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/order/waitinit/room-851272901_roomnum-1_checkinday-2017-11-28_checkoutday-2017-11-29#"
+1511833141032	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/order/waitinit/room-851272901_roomnum-1_checkinday-2017-11-28_checkoutday-2017-11-29#"
+1511833141037	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/order/waitinit/room-851272901_roomnum-1_checkinday-2017-11-28_checkoutday-2017-11-29#"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511833141180	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450991"
+1511833141180	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450993"
+1511833141363	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/order/fastwaitpay/854232130?isVisitorFlag=false"
+1511833141485	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/order/fastwaitpay/854232130?isVisitorFlag=false"
+1511833146604	Marionette	INFO	New connections will no longer be accepted
+1511833170661	geckodriver	INFO	geckodriver 0.19.0
+1511833170669	geckodriver	INFO	Listening on 127.0.0.1:64849
+1511833172752	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\admin\\AppData\\Local\\Temp\\rust_mozprofile.PSXEk40XDXLH"
+1511833173122	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1511833173439	Marionette	INFO	Enabled via --marionette
+1511833175022	Marionette	INFO	Listening on port 64855
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+[Child 9164] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9164] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511833175901	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511833175940	Marionette	DEBUG	Register listener.js for window 6442450945
+1511833175980	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511833176042	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511833176042	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511833177472	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/"
+1511833188946	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/"
+1511833189259	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511833189525	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511833189828	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511833198090	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/"
+1511833198190	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/"
+1511833198195	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/"
+1511833198322	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450961"
+1511833198322	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450952"
+1511833198322	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450951"
+1511833198322	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450949"
+1511833198323	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450956"
+1511833198323	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450958"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511833200480	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/"
+1511833201164	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/"
+1511833201174	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/"
+1511833201335	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/"
+1511833201338	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/"
+1511833201717	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450970"
+1511833201717	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450965"
+1511833201717	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450967"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511833202537	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/wujiaqu/"
+1511833203254	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/wujiaqu/"
+1511833205530	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/wujiaqu/"
+1511833205667	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/wujiaqu/"
+1511833205670	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/wujiaqu/"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511833207355	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450978"
+1511833207357	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450973"
+1511833207358	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450975"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511833208072	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/room/851272901?s=%E5%BC%A0%E4%BD%B3%E6%81%92%E6%B5%8B%E8%AF%95"
+1511833212566	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/room/851272901?s=%E5%BC%A0%E4%BD%B3%E6%81%92%E6%B5%8B%E8%AF%95"
+1511833215741	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/room/851272901?s=%E5%BC%A0%E4%BD%B3%E6%81%92%E6%B5%8B%E8%AF%95"
+1511833216119	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/room/851272901?s=%E5%BC%A0%E4%BD%B3%E6%81%92%E6%B5%8B%E8%AF%95"
+1511833216128	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/room/851272901?s=%E5%BC%A0%E4%BD%B3%E6%81%92%E6%B5%8B%E8%AF%95"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511833216263	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450981"
+1511833216268	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450983"
+1511833216268	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450986"
+1511833216592	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/order/waitinit/room-851272901_roomnum-1_checkinday-2017-11-28_checkoutday-2017-11-29#"
+1511833217061	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/order/waitinit/room-851272901_roomnum-1_checkinday-2017-11-28_checkoutday-2017-11-29#"
+1511833223501	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511833224638	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/order/waitinit/room-851272901_roomnum-1_checkinday-2017-11-28_checkoutday-2017-11-29#"
+1511833224822	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/order/waitinit/room-851272901_roomnum-1_checkinday-2017-11-28_checkoutday-2017-11-29#"
+1511833224833	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/order/waitinit/room-851272901_roomnum-1_checkinday-2017-11-28_checkoutday-2017-11-29#"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511833224986	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450990"
+1511833224986	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450992"
+1511833225177	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/order/fastwaitpay/854232131?isVisitorFlag=false"
+1511833225338	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/order/fastwaitpay/854232131?isVisitorFlag=false"
+1511833230490	Marionette	INFO	New connections will no longer be accepted
+1511942119038	geckodriver	INFO	geckodriver 0.19.0
+1511942119052	geckodriver	INFO	Listening on 127.0.0.1:58781
+1511942121158	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\admin\\AppData\\Local\\Temp\\rust_mozprofile.wf4ZJG7tNW5T"
+1511942122244	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1511942122685	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+[Child 12820] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12820] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511942124191	Marionette	INFO	Listening on port 58790
+1511942124295	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511942124377	Marionette	DEBUG	Register listener.js for window 6442450945
+1511942124504	Marionette	INFO	New connections will no longer be accepted
+[GFX[1-]: Receive IPC close with reason=AbnormalShutdown
+GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1511942191989	geckodriver	INFO	geckodriver 0.19.0
+1511942191996	geckodriver	INFO	Listening on 127.0.0.1:58837
+1511942194111	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\admin\\AppData\\Local\\Temp\\rust_mozprofile.Er9c1aQrtZ0j"
+1511942194603	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1511942195008	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+[Child 1716] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1716] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511942196448	Marionette	INFO	Listening on port 58843
+1511942197247	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511942197282	Marionette	DEBUG	Register listener.js for window 6442450945
+1511942197322	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511942197440	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511942197441	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511942202910	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/"
+1511942228329	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/"
+1511942228646	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511942228905	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511942229216	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511942237487	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511942239724	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/"
+1511942240231	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/"
+1511942240233	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511942240740	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450964"
+1511942240740	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450966"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511942241079	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/landlord/856847590/orders"
+1511942243559	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/landlord/856847590/orders"
+1511942245857	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511942245889	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/landlord/856847590/orders"
+1511942246025	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/landlord/856847590/orders"
+1511942246031	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/landlord/856847590/orders"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511942246184	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450970"
+1511942246184	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450972"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511942246438	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders?beginCheckInDay=&endCheckInDay=&orderOrMoblie="
+1511942246581	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders?beginCheckInDay=&endCheckInDay=&orderOrMoblie="
+1511942246643	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders?beginCheckInDay=&endCheckInDay=&orderOrMoblie="
+JavaScript error: http://staticnewpre.mayi.com/resourcesWeb/My97DatePicker/My97DatePicker.htm, line 9: SecurityError: Permission denied to access property "$dp" on cross-origin object
+JavaScript error: http://staticnewpre.mayi.com/resourcesWeb/My97DatePicker/calendar.js line 5 > eval, line 1: TypeError: $.attachEvent is not a function
+1511942246726	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders?beginCheckInDay=&endCheckInDay=&orderOrMoblie="
+1511942246727	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders?beginCheckInDay=&endCheckInDay=&orderOrMoblie="
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511942246848	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450976"
+1511942246848	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450978"
+1511942246848	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450981"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511942247056	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/user/landlord/microshop/856847590/order/853496711"
+1511942247183	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/user/landlord/microshop/856847590/order/853496711"
+1511942247236	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/user/landlord/microshop/856847590/order/853496711"
+1511942247349	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/user/landlord/microshop/856847590/order/853496711"
+1511942247350	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/user/landlord/microshop/856847590/order/853496711"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511942247428	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450985"
+1511942247428	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450987"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511942247707	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders"
+1511942247852	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders"
+JavaScript error: http://staticnewpre.mayi.com/resourcesWeb/My97DatePicker/My97DatePicker.htm, line 9: SecurityError: Permission denied to access property "$dp" on cross-origin object
+JavaScript error: http://staticnewpre.mayi.com/resourcesWeb/My97DatePicker/calendar.js line 5 > eval, line 1: TypeError: $.attachEvent is not a function
+JavaScript error: http://staticnewpre.mayi.com/resourcesWeb/My97DatePicker/calendar.js line 5 > eval, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+1511942247983	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders"
+1511942248037	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders"
+1511942248039	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders"
+1511942248133	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450991"
+1511942248133	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450993"
+1511942248134	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450996"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511942248649	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/"
+1511942248779	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/"
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+[Child 8912] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 8436] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1511942314921	geckodriver	INFO	geckodriver 0.19.0
+1511942314928	geckodriver	INFO	Listening on 127.0.0.1:59091
+1511942316985	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\admin\\AppData\\Local\\Temp\\rust_mozprofile.ZIdZKofi21f7"
+1511942317464	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1511942317862	Marionette	INFO	Enabled via --marionette
+1511942319379	Marionette	INFO	Listening on port 59097
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+[Child 1408] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1408] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511942320124	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511942320155	Marionette	DEBUG	Register listener.js for window 6442450945
+1511942320193	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511942320251	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511942320251	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511942320893	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/"
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511942335567	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/"
+1511942335889	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511942336135	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511942336458	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511942344658	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/"
+1511942344744	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/"
+1511942344747	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/"
+1511942344848	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450959"
+1511942344848	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450955"
+1511942344848	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450962"
+1511942344848	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450952"
+1511942344849	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450949"
+1511942344849	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450951"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511942346818	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/"
+1511942347738	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/"
+1511942349873	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/"
+1511942350117	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/"
+1511942350122	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511942350491	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450971"
+1511942350492	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450966"
+1511942350492	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450968"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511942350778	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/landlord/856847590/orders"
+1511942352493	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/landlord/856847590/orders"
+1511942354793	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511942354857	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/landlord/856847590/orders"
+1511942354972	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/landlord/856847590/orders"
+1511942354982	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/landlord/856847590/orders"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511942355143	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450974"
+1511942355143	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450976"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511942355387	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders?beginCheckInDay=&endCheckInDay=&orderOrMoblie="
+1511942355545	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders?beginCheckInDay=&endCheckInDay=&orderOrMoblie="
+1511942355601	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders?beginCheckInDay=&endCheckInDay=&orderOrMoblie="
+JavaScript error: http://staticnewpre.mayi.com/resourcesWeb/My97DatePicker/My97DatePicker.htm, line 9: SecurityError: Permission denied to access property "$dp" on cross-origin object
+JavaScript error: http://staticnewpre.mayi.com/resourcesWeb/My97DatePicker/calendar.js line 5 > eval, line 1: TypeError: $.attachEvent is not a function
+1511942355665	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders?beginCheckInDay=&endCheckInDay=&orderOrMoblie="
+1511942355667	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders?beginCheckInDay=&endCheckInDay=&orderOrMoblie="
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511942355808	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450980"
+1511942355808	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450982"
+1511942355808	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450985"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511942356009	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/user/landlord/microshop/856847590/order/853496711"
+1511942358096	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/user/landlord/microshop/856847590/order/853496711"
+1511942358153	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/user/landlord/microshop/856847590/order/853496711"
+1511942358246	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/user/landlord/microshop/856847590/order/853496711"
+1511942358249	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/user/landlord/microshop/856847590/order/853496711"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511942358389	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450989"
+1511942358390	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450991"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511942358646	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders"
+1511942358787	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders"
+JavaScript error: http://staticnewpre.mayi.com/resourcesWeb/My97DatePicker/My97DatePicker.htm, line 9: SecurityError: Permission denied to access property "$dp" on cross-origin object
+JavaScript error: http://staticnewpre.mayi.com/resourcesWeb/My97DatePicker/calendar.js line 5 > eval, line 1: TypeError: $.attachEvent is not a function
+JavaScript error: http://staticnewpre.mayi.com/resourcesWeb/My97DatePicker/calendar.js line 5 > eval, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+1511942361050	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders"
+1511942361262	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders"
+1511942361265	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511942361354	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450995"
+1511942361354	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450997"
+1511942361354	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442451000"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511942361703	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/landlord/856847590/orders"
+1511942361838	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/landlord/856847590/orders"
+1511942364030	Marionette	INFO	New connections will no longer be accepted
+1511942423520	geckodriver	INFO	geckodriver 0.19.0
+1511942423526	geckodriver	INFO	Listening on 127.0.0.1:59338
+1511942425644	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\admin\\AppData\\Local\\Temp\\rust_mozprofile.OPuc6VCZJb1t"
+1511942426136	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1511942426554	Marionette	INFO	Enabled via --marionette
+1511942428154	Marionette	INFO	Listening on port 59344
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+[Child 8484] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511942428781	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511942428832	Marionette	DEBUG	Register listener.js for window 6442450945
+1511942428872	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511942428930	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511942428930	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511942430906	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/"
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511942441377	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/"
+1511942441691	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511942441971	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511942442307	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511942450514	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/"
+1511942450585	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/"
+1511942450590	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/"
+1511942450907	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450959"
+1511942450907	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450956"
+1511942450908	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450962"
+1511942450908	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450953"
+1511942450908	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450949"
+1511942450909	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450951"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511942461703	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/"
+1511942462631	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/"
+1511942464755	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/"
+1511942464978	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/"
+1511942464984	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511942465265	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450971"
+1511942465266	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450966"
+1511942465266	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450968"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511942465552	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/landlord/856847590/orders"
+1511942478533	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/landlord/856847590/orders"
+1511942480787	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511942480839	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/landlord/856847590/orders"
+1511942480954	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/landlord/856847590/orders"
+1511942480958	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/landlord/856847590/orders"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511942481112	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450974"
+1511942481112	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450976"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511942481351	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders?beginCheckInDay=&endCheckInDay=&orderOrMoblie="
+1511942481525	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders?beginCheckInDay=&endCheckInDay=&orderOrMoblie="
+1511942481587	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders?beginCheckInDay=&endCheckInDay=&orderOrMoblie="
+JavaScript error: http://staticnewpre.mayi.com/resourcesWeb/My97DatePicker/My97DatePicker.htm, line 9: SecurityError: Permission denied to access property "$dp" on cross-origin object
+JavaScript error: http://staticnewpre.mayi.com/resourcesWeb/My97DatePicker/calendar.js line 5 > eval, line 1: TypeError: $.attachEvent is not a function
+1511942481675	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders?beginCheckInDay=&endCheckInDay=&orderOrMoblie="
+1511942481677	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders?beginCheckInDay=&endCheckInDay=&orderOrMoblie="
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511942481814	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450980"
+1511942481814	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450982"
+1511942481814	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450985"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511942482012	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/user/landlord/microshop/856847590/order/853496711"
+1511942482158	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/user/landlord/microshop/856847590/order/853496711"
+1511942482211	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/user/landlord/microshop/856847590/order/853496711"
+1511942482336	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/user/landlord/microshop/856847590/order/853496711"
+1511942482343	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/user/landlord/microshop/856847590/order/853496711"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511942482467	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450989"
+1511942482467	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450991"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511942482670	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders"
+1511942485795	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders"
+JavaScript error: http://staticnewpre.mayi.com/resourcesWeb/My97DatePicker/My97DatePicker.htm, line 9: SecurityError: Permission denied to access property "$dp" on cross-origin object
+JavaScript error: http://staticnewpre.mayi.com/resourcesWeb/My97DatePicker/calendar.js line 5 > eval, line 1: TypeError: $.attachEvent is not a function
+JavaScript error: http://staticnewpre.mayi.com/resourcesWeb/My97DatePicker/calendar.js line 5 > eval, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+1511942488011	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders"
+1511942488268	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders"
+1511942488271	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511942488403	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450995"
+1511942488403	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450997"
+1511942488403	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442451000"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511942488674	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/landlord/856847590/orders"
+1511942488812	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/landlord/856847590/orders"
+1511942490946	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/landlord/856847590/orders"
+1511942491070	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/landlord/856847590/orders"
+1511942491076	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/landlord/856847590/orders"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511942491225	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442451004"
+1511942491225	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442451006"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511942491489	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders?beginCheckInDay=&endCheckInDay=&orderOrMoblie="
+1511942491594	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders?beginCheckInDay=&endCheckInDay=&orderOrMoblie="
+JavaScript error: http://staticnewpre.mayi.com/resourcesWeb/My97DatePicker/My97DatePicker.htm, line 9: SecurityError: Permission denied to access property "$dp" on cross-origin object
+JavaScript error: http://staticnewpre.mayi.com/resourcesWeb/My97DatePicker/calendar.js line 5 > eval, line 1: TypeError: $.attachEvent is not a function
+JavaScript error: http://staticnewpre.mayi.com/resourcesWeb/My97DatePicker/calendar.js line 5 > eval, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+1511942491668	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders?beginCheckInDay=&endCheckInDay=&orderOrMoblie="
+1511942491741	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders?beginCheckInDay=&endCheckInDay=&orderOrMoblie="
+1511942491744	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders?beginCheckInDay=&endCheckInDay=&orderOrMoblie="
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511942491873	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442451010"
+1511942491873	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442451012"
+1511942491873	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442451015"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511942492129	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/user/landlord/microshop/856847590/order/853496711"
+1511942492213	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/user/landlord/microshop/856847590/order/853496711"
+1511942492291	Marionette	INFO	New connections will no longer be accepted
+1511942983065	geckodriver	INFO	geckodriver 0.19.0
+1511942983073	geckodriver	INFO	Listening on 127.0.0.1:59886
+1511942985144	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\admin\\AppData\\Local\\Temp\\rust_mozprofile.iXw7SnEsawdz"
+1511942985677	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1511942986373	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+[Child 11372] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11372] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511942987866	Marionette	INFO	Listening on port 59892
+1511942988277	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511942988315	Marionette	DEBUG	Register listener.js for window 6442450945
+1511942988368	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511942988762	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511942988762	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511942994908	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/"
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511943010405	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/"
+1511943010737	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511943011003	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511943011298	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511943019533	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511943021632	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/"
+JavaScript error: http://staticnewpre.mayi.com/resourcesWeb/js/index/terminator2.2.min.js line 14 > eval, line 1: TypeError: this.cons is undefined
+1511943022032	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/"
+1511943022035	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511943022273	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450966"
+1511943022274	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450968"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511943022590	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/landlord/856847590/orders"
+1511943025072	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/landlord/856847590/orders"
+1511943027375	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511943027424	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/landlord/856847590/orders"
+1511943027580	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/landlord/856847590/orders"
+1511943027584	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/landlord/856847590/orders"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511943027742	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450972"
+1511943027742	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450974"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511943028048	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders?beginCheckInDay=&endCheckInDay=&orderOrMoblie="
+1511943028211	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders?beginCheckInDay=&endCheckInDay=&orderOrMoblie="
+1511943028275	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders?beginCheckInDay=&endCheckInDay=&orderOrMoblie="
+JavaScript error: http://staticnewpre.mayi.com/resourcesWeb/My97DatePicker/My97DatePicker.htm, line 9: SecurityError: Permission denied to access property "$dp" on cross-origin object
+JavaScript error: http://staticnewpre.mayi.com/resourcesWeb/My97DatePicker/calendar.js line 5 > eval, line 1: TypeError: $.attachEvent is not a function
+1511943028373	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders?beginCheckInDay=&endCheckInDay=&orderOrMoblie="
+1511943028376	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders?beginCheckInDay=&endCheckInDay=&orderOrMoblie="
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511943028524	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450978"
+1511943028524	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450980"
+1511943028524	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450983"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511943028755	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/user/landlord/microshop/856847590/order/853496711"
+1511943028890	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/user/landlord/microshop/856847590/order/853496711"
+1511943028942	Marionette	DEBUG	Received DOM event "beforeunload" for "http://pre.mayi.com/user/landlord/microshop/856847590/order/853496711"
+1511943029059	Marionette	DEBUG	Received DOM event "pagehide" for "http://pre.mayi.com/user/landlord/microshop/856847590/order/853496711"
+1511943029069	Marionette	DEBUG	Received DOM event "unload" for "http://pre.mayi.com/user/landlord/microshop/856847590/order/853496711"
+JavaScript warning: http://staticnewpre.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511943029233	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450987"
+1511943029233	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450989"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511943029468	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders"
+1511943033640	Marionette	DEBUG	Received DOM event "pageshow" for "http://pre.mayi.com/user/landlord/microshop/856847590/orders"
+JavaScript error: http://staticnewpre.mayi.com/resourcesWeb/My97DatePicker/My97DatePicker.htm, line 9: SecurityError: Permission denied to access property "$dp" on cross-origin object
+JavaScript error: http://staticnewpre.mayi.com/resourcesWeb/My97DatePicker/calendar.js line 5 > eval, line 1: TypeError: $.attachEvent is not a function
+JavaScript error: http://staticnewpre.mayi.com/resourcesWeb/My97DatePicker/calendar.js line 5 > eval, line 1: SecurityError: Permission denied to access property "document" on cross-origin object
+1511943033764	Marionette	INFO	New connections will no longer be accepted
+1511944140000	geckodriver	INFO	geckodriver 0.19.0
+1511944140008	geckodriver	INFO	Listening on 127.0.0.1:61467
+1511944142077	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\admin\\AppData\\Local\\Temp\\rust_mozprofile.44PeSWPHNH89"
+1511944142590	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1511944143002	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+[Child 12220] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12220] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1511944144535	Marionette	INFO	Listening on port 61475
+1511944145214	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511944145244	Marionette	DEBUG	Register listener.js for window 6442450945
+1511944145285	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511944145336	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511944145336	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511944146820	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.mayi.com/"
+1511944170328	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.mayi.com/"
+1511944170662	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944170909	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944171225	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944179398	Marionette	DEBUG	Received DOM event "beforeunload" for "http://www.mayi.com/"
+1511944179449	Marionette	DEBUG	Received DOM event "pagehide" for "http://www.mayi.com/"
+1511944179452	Marionette	DEBUG	Received DOM event "unload" for "http://www.mayi.com/"
+1511944179600	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450961"
+1511944179600	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450952"
+1511944179600	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450951"
+1511944179600	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450949"
+1511944179601	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450954"
+1511944179601	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450957"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511944185287	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.mayi.com/"
+1511944185971	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.mayi.com/"
+1511944191179	Marionette	DEBUG	Received DOM event "beforeunload" for "http://www.mayi.com/"
+1511944191237	Marionette	DEBUG	Received DOM event "pagehide" for "http://www.mayi.com/"
+1511944191239	Marionette	DEBUG	Received DOM event "unload" for "http://www.mayi.com/"
+JavaScript warning: http://staticnew.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511944193317	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450972"
+1511944193317	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450970"
+1511944193317	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450965"
+1511944193317	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450967"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511944194145	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.mayi.com/room/publish/basicinfo"
+1511944198370	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.mayi.com/room/publish/basicinfo"
+1511944200648	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944202898	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944205139	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944207401	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944209669	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944209922	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944212153	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944212405	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944212662	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944214934	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944215185	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944215421	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944215655	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944215894	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944216162	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944216386	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944216632	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944216891	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944217164	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944217406	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944217646	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944217881	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944218156	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944218411	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944218665	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944218912	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944219146	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944221297	Marionette	DEBUG	Received DOM event "beforeunload" for "http://www.mayi.com/room/publish/basicinfo"
+1511944221476	Marionette	DEBUG	Received DOM event "pagehide" for "http://www.mayi.com/room/publish/basicinfo"
+1511944221480	Marionette	DEBUG	Received DOM event "unload" for "http://www.mayi.com/room/publish/basicinfo"
+JavaScript warning: http://staticnew.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511944221697	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450976"
+1511944221697	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450978"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511944221923	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.mayi.com/room/publish/detailinfo/851692083"
+1511944222047	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.mayi.com/room/publish/detailinfo/851692083"
+1511944234609	Marionette	DEBUG	Received DOM event "beforeunload" for "http://www.mayi.com/room/publish/detailinfo/851692083"
+1511944234703	Marionette	DEBUG	Received DOM event "pagehide" for "http://www.mayi.com/room/publish/detailinfo/851692083"
+1511944234705	Marionette	DEBUG	Received DOM event "unload" for "http://www.mayi.com/room/publish/detailinfo/851692083"
+JavaScript warning: http://staticnew.mayi.com/resourcesWeb/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1511944235908	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450982"
+1511944235909	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "6442450984"
+JavaScript warning: http://static.mediav.com/mv.js, line 1: unreachable code after return statement
+1511944236169	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.mayi.com/room/publish/imageinfo/851692083"
+1511944236417	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.mayi.com/room/publish/imageinfo/851692083"
+1511944236681	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944243024	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944249330	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1511944255640	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+Unable to read VR Path Registry from C:\Users\admin\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 11332] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

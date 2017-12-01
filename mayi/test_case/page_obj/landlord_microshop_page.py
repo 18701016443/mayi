@@ -11,7 +11,7 @@ from .base import Pyse
 
 class LandlordMicroshopPage(Pyse):
     '''微店订单'''
-    utl = "/"
+    # utl = "/"
 
     #微店订单
     def microshop(self):

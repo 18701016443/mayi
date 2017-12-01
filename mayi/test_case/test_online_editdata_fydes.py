@@ -31,10 +31,15 @@ class TestEditdataFydes(myunit.MyTest):
 
         po.editdata()
         po.fy_des()
-
-        po.EditAddress()
+        po.is_element_exist("xpath=>html/body/div[14]/div[2]/div/div/div[2]/form/div[1]/p/em")
         sleep(2)
-        po.changePosition()
+
+        #之前的逻辑是修改地理位置，后来逻辑改为不可修改地理位置，因此注释以下代码
+        # po.EditAddress()
+        # sleep(2)
+        # po.changePosition()
+
+
         sleep(1)
         fb.title()
         fb.intro()
@@ -53,4 +58,3 @@ class TestEditdataFydes(myunit.MyTest):
 
 if __name__ == "__main__":
     unittest.main()
-

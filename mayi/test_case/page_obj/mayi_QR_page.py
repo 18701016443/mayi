@@ -11,7 +11,7 @@ from .base import Pyse
 
 class MaYiQRPage(Pyse):
     '''PC网页二维码'''
-    url = "/"
+    # url = "/"
 
 
     #首页导航——APP首单立减5元——二维码
@@ -52,7 +52,7 @@ class MaYiQRPage(Pyse):
 
     #APP50下载页面的Android下载按钮
     def APP50_andriodbtn(self):
-        self.click("id=>Android")
+        self.click("xpath=>//*[@id='Android']/img")
 
     #房东banner图上的二维码
     def order_banner_QR(self):
