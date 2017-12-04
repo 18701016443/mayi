@@ -18,12 +18,12 @@ class TenantNavPage(Pyse):
 
     #消息通知
     def msgmanager(self):
-        self.click("xpath=>/html/body/div[13]/div[1]/ul/li[2]/a")
+        self.click("xpath=>html/body/div[14]/div[1]/ul/li[2]/a")
 
     #账号管理
     def accountmanager(self):
-        self.click("xpath=>/html/body/div[13]/div/ul/li[3]/a")
+        self.click("xpath=>html/body/div[14]/div[1]/ul/li[3]/a")
 
     #我的收藏
     def mycollection(self):
-        self.click("xpath=>/html/body/div[13]/div/ul/li[4]/a")
+        self.click("xpath=>/html/body/div[14]/div[1]/ul/li[4]/a")

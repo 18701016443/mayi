@@ -30,7 +30,7 @@ class WujiaquOrderPage(Pyse):
         for i in dds:
             id = i.get_attribute("lid")
             list.append(id)
-        self.open_new_window("xpath=>//*[@id="+list[0]+"]")
+        self.open_new_window("xpath=>//*[@id="+list[2]+"]")
 
     #立即预定
     def goBookBtn(self):

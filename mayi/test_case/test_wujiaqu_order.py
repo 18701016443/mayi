@@ -20,10 +20,15 @@ class TestWujiaquOrder(myunit.MyTest):
         login_page.LoginPage(self.driver).login()
         po._open(url = "/wujiaqu/")
 
+        #搜索房源名字直接进入该房源
         po.searchcityin1()
         sleep(2)
         po.landmarkBtn()
+
+
+        # 遍历房源选择第一个房源
         # po.one_room()
+
         sleep(3)
         po.goBookBtn()
 

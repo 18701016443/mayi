@@ -84,8 +84,9 @@ class LandlordOnlineEditdata(Pyse):
         self.click("id=>SWFUpload_0")
 
     #设为封面
-    def setcover(self):
-        self.click("xpath=>html/body/div[14]/div[2]/div/div/div[3]/div[2]/form/div[2]/div[1]/ul/li[2]/div/a[1]")
+    def setcover(self,i):
+        self.click("xpath=>//*[@id='logList']/li["+ i +"]/div/a[1]")
+
 
     #删除图片
     def del_pic(self):

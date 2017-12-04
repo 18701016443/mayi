@@ -46,6 +46,10 @@ class TestEditPrice(myunit.MyTest):
         fb.upto()
 
         po.price_save()
+        print( po.editsuccess_text() )
+        sleep(2)
+        function.insert_img(self.driver,"test_price.png")
+        po.auditLodgeConfirmBtn()
 
 
 if __name__ == "__main__":

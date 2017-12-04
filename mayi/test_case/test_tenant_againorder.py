@@ -14,6 +14,7 @@ import unittest
 
 class TestAgainOrder(myunit.MyTest):
     '''房客重新下单'''
+    @unittest.skip("跳过重新下单的用例")
     def test_againorder(self):
         '''重新下单'''
         login_page.LoginPage(self.driver).login()
@@ -29,7 +30,7 @@ class TestAgainOrder(myunit.MyTest):
         wo.goBookBtn()
         sleep(2)
         wo.people()
-        wo.tenantname()
+        # wo.tenantname()
         sleep(2)
         wo.user()
         wo.submit_order()

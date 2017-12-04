@@ -14,7 +14,12 @@ class TenantCollectionPage(Pyse):
 
     #收藏按钮
     def collection(self):
-        self.click("xpath=>html/body/div[14]/div[1]/div[2]/div[2]/div/dl/dd[1]/div/div[1]")
+        self.click("xpath=>html/body/div[15]/div[1]/div[2]/div[2]/div/dl/dd[1]/div/div[1]")
+
+    def title(self):
+        title = self.get_attribute("xpath=>html/body/div[15]/div[1]/div[2]/div[2]/div/dl/dd[1]/div/div[1]","title")
+        return title
+
 
     #获得收藏房源的ID
     def collection_ID(self):
