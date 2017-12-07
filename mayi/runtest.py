@@ -15,6 +15,7 @@ import unittest
 import os,time
 
 #定义发送邮件
+
 def send_mail(file_new):
     f = open(file_new,"rb")
     mail_body = f.read()
@@ -62,6 +63,7 @@ def send_mail(file_new):
     # print("email has send out")
 
 #查找测试报告目录，找到最新生成的测试报告文件
+
 def new_report(testreport):
     lists = os.listdir(testreport)
     lists.sort(key=lambda fn:os.path.getmtime(testreport + "\\" + fn))

@@ -1,0 +1,1698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>蚂蚁PC自动化测试报告</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         { }
+
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+	font-size: 16pt;
+	color: gray;
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+
+/* -- css div popup ------------------------------------------------------------------------ */
+a.popup_link {
+}
+
+a.popup_link:hover {
+    color: red;
+}
+
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    background-color: #E6E6D6;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 8pt;
+    width: 500px;
+}
+
+}
+/* -- report ------------------------------------------------------------------------ */
+#show_detail_line {
+    margin-top: 3ex;
+    margin-bottom: 1ex;
+}
+#result_table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #777;
+}
+#header_row {
+    font-weight: bold;
+    color: white;
+    background-color: #777;
+}
+#result_table td {
+    border: 1px solid #777;
+    padding: 2px;
+}
+#total_row  { font-weight: bold; }
+.passClass  { background-color: #6c6; }
+.failClass  { background-color: #c60; }
+.errorClass { background-color: #c00; }
+.passCase   { color: #6c6; }
+.failCase   { color: #c60; font-weight: bold; }
+.errorCase  { color: #c00; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
+
+</style>
+
+</head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+--></script>
+
+<div class='heading'>
+<h1>蚂蚁PC自动化测试报告</h1>
+<p class='attribute'><strong>Start Time:</strong> 2017-12-06 15:52:56</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:00.034602</p>
+<p class='attribute'><strong>Status:</strong> Error 33</p>
+
+<p class='description'>环境 win10  浏览器：谷歌/59版</p>
+</div>
+
+
+
+<p id='show_detail_line'>Show
+<a href='javascript:showCase(0)'>Summary</a>
+<a href='javascript:showCase(1)'>Failed</a>
+<a href='javascript:showCase(2)'>All</a>
+</p>
+<table id='result_table'>
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row'>
+    <td>Test Group/Test case</td>
+    <td>Count</td>
+    <td>Pass</td>
+    <td>Fail</td>
+    <td>Error</td>
+    <td>View</td>
+</tr>
+
+<tr class='errorClass'>
+    <td>unittest.loader._FailedTest</td>
+    <td>33</td>
+    <td>0</td>
+    <td>0</td>
+    <td>33</td>
+    <td><a href="javascript:showClassDetail('c1',33)">Detail</a></td>
+</tr>
+
+<tr id='ft1.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_fabu_room</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        error</a>
+
+    <div id='div_ft1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.1: ImportError: Failed to import test module: test_fabu_room
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_fabu_room.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import fabu_room_page,login_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_fabu_room
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_fabu_room.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import fabu_room_page,login_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_landlord_accountmanager</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')" >
+        error</a>
+
+    <div id='div_ft1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.2: ImportError: Failed to import test module: test_landlord_accountmanager
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_accountmanager.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_accountmanager_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_landlord_accountmanager
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_accountmanager.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_accountmanager_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_landlord_activity</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
+        error</a>
+
+    <div id='div_ft1.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.3: ImportError: Failed to import test module: test_landlord_activity
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_activity.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_activity_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_landlord_activity
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_activity.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_activity_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.4' class='none'>
+    <td class='errorCase'><div class='testcase'>test_landlord_alias</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.4')" >
+        error</a>
+
+    <div id='div_ft1.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.4: ImportError: Failed to import test module: test_landlord_alias
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_alias.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_alias_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_landlord_alias
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_alias.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_alias_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.5' class='none'>
+    <td class='errorCase'><div class='testcase'>test_landlord_confirm</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.5')" >
+        error</a>
+
+    <div id='div_ft1.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.5: ImportError: Failed to import test module: test_landlord_confirm
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_confirm.py", line 11, in &lt;module&gt;
+    from mayi.models import myunit,function
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_landlord_confirm
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_confirm.py", line 11, in &lt;module&gt;
+    from mayi.models import myunit,function
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.6' class='none'>
+    <td class='errorCase'><div class='testcase'>test_landlord_delete</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.6')" >
+        error</a>
+
+    <div id='div_ft1.6' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.6').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.6: ImportError: Failed to import test module: test_landlord_delete
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_delete.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_delete_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_landlord_delete
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_delete.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_delete_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.7' class='none'>
+    <td class='errorCase'><div class='testcase'>test_landlord_editprice</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.7')" >
+        error</a>
+
+    <div id='div_ft1.7' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.7').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.7: ImportError: Failed to import test module: test_landlord_editprice
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_editprice.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,fabu_room_page,landlord_editprice_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_landlord_editprice
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_editprice.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,fabu_room_page,landlord_editprice_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.8' class='none'>
+    <td class='errorCase'><div class='testcase'>test_landlord_experience</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.8')" >
+        error</a>
+
+    <div id='div_ft1.8' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.8').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.8: ImportError: Failed to import test module: test_landlord_experience
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_experience.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_experience_page,fabu_room_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_landlord_experience
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_experience.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_experience_page,fabu_room_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.9' class='none'>
+    <td class='errorCase'><div class='testcase'>test_landlord_forum</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.9')" >
+        error</a>
+
+    <div id='div_ft1.9' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.9').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.9: ImportError: Failed to import test module: test_landlord_forum
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_forum.py", line 11, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_forum_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_landlord_forum
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_forum.py", line 11, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_forum_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.10' class='none'>
+    <td class='errorCase'><div class='testcase'>test_landlord_invalid</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.10')" >
+        error</a>
+
+    <div id='div_ft1.10' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.10').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.10: ImportError: Failed to import test module: test_landlord_invalid
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_invalid.py", line 10, in &lt;module&gt;
+    from mayi.models import function,myunit
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_landlord_invalid
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_invalid.py", line 10, in &lt;module&gt;
+    from mayi.models import function,myunit
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.11' class='none'>
+    <td class='errorCase'><div class='testcase'>test_landlord_manageStandard</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.11')" >
+        error</a>
+
+    <div id='div_ft1.11' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.11').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.11: ImportError: Failed to import test module: test_landlord_manageStandard
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_manageStandard.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_manageStandard_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_landlord_manageStandard
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_manageStandard.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_manageStandard_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.12' class='none'>
+    <td class='errorCase'><div class='testcase'>test_landlord_microshop</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.12')" >
+        error</a>
+
+    <div id='div_ft1.12' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.12').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.12: ImportError: Failed to import test module: test_landlord_microshop
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_microshop.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_microshop_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_landlord_microshop
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_microshop.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_microshop_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.13' class='none'>
+    <td class='errorCase'><div class='testcase'>test_landlord_microshopmanager</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.13')" >
+        error</a>
+
+    <div id='div_ft1.13' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.13').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.13: ImportError: Failed to import test module: test_landlord_microshopmanager
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_microshopmanager.py", line 11, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_microshopmanager_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_landlord_microshopmanager
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_microshopmanager.py", line 11, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_microshopmanager_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.14' class='none'>
+    <td class='errorCase'><div class='testcase'>test_landlord_msg</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.14')" >
+        error</a>
+
+    <div id='div_ft1.14' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.14').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.14: ImportError: Failed to import test module: test_landlord_msg
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_msg.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_msg_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_landlord_msg
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_msg.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_msg_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.15' class='none'>
+    <td class='errorCase'><div class='testcase'>test_landlord_offline</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.15')" >
+        error</a>
+
+    <div id='div_ft1.15' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.15').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.15: ImportError: Failed to import test module: test_landlord_offline
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_offline.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_offline_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_landlord_offline
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_offline.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_offline_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.16' class='none'>
+    <td class='errorCase'><div class='testcase'>test_landlord_online</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.16')" >
+        error</a>
+
+    <div id='div_ft1.16' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.16').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.16: ImportError: Failed to import test module: test_landlord_online
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_online.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_online_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_landlord_online
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_online.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_online_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.17' class='none'>
+    <td class='errorCase'><div class='testcase'>test_landlord_online_editdata</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.17')" >
+        error</a>
+
+    <div id='div_ft1.17' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.17').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.17: ImportError: Failed to import test module: test_landlord_online_editdata
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_online_editdata.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_online_editdata,fabu_room_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_landlord_online_editdata
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_online_editdata.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_online_editdata,fabu_room_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.18' class='none'>
+    <td class='errorCase'><div class='testcase'>test_landlord_read</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.18')" >
+        error</a>
+
+    <div id='div_ft1.18' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.18').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.18: ImportError: Failed to import test module: test_landlord_read
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_read.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_read_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_landlord_read
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_read.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_read_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.19' class='none'>
+    <td class='errorCase'><div class='testcase'>test_landlord_refund</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.19')" >
+        error</a>
+
+    <div id='div_ft1.19' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.19').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.19: ImportError: Failed to import test module: test_landlord_refund
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_refund.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_refund_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_landlord_refund
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_refund.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_refund_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.20' class='none'>
+    <td class='errorCase'><div class='testcase'>test_landlord_roomsearch</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.20')" >
+        error</a>
+
+    <div id='div_ft1.20' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.20').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.20: ImportError: Failed to import test module: test_landlord_roomsearch
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_roomsearch.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_roomsearch_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_landlord_roomsearch
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_roomsearch.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_roomsearch_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.21' class='none'>
+    <td class='errorCase'><div class='testcase'>test_landlord_serach</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.21')" >
+        error</a>
+
+    <div id='div_ft1.21' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.21').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.21: ImportError: Failed to import test module: test_landlord_serach
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_serach.py", line 10, in &lt;module&gt;
+    from mayi.models import myunit,function
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_landlord_serach
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_serach.py", line 10, in &lt;module&gt;
+    from mayi.models import myunit,function
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.22' class='none'>
+    <td class='errorCase'><div class='testcase'>test_landlord_waitingcheckin</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.22')" >
+        error</a>
+
+    <div id='div_ft1.22' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.22').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.22: ImportError: Failed to import test module: test_landlord_waitingcheckin
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_waitingcheckin.py", line 10, in &lt;module&gt;
+    from mayi.models import myunit,function
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_landlord_waitingcheckin
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_waitingcheckin.py", line 10, in &lt;module&gt;
+    from mayi.models import myunit,function
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.23' class='none'>
+    <td class='errorCase'><div class='testcase'>test_landlord_weixin</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.23')" >
+        error</a>
+
+    <div id='div_ft1.23' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.23').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.23: ImportError: Failed to import test module: test_landlord_weixin
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_weixin.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_weixin_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_landlord_weixin
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_landlord_weixin.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_weixin_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.24' class='none'>
+    <td class='errorCase'><div class='testcase'>test_login</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.24')" >
+        error</a>
+
+    <div id='div_ft1.24' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.24').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.24: ImportError: Failed to import test module: test_login
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_login.py", line 11, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_login
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_login.py", line 11, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.25' class='none'>
+    <td class='errorCase'><div class='testcase'>test_mayiQR</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.25')" >
+        error</a>
+
+    <div id='div_ft1.25' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.25').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.25: ImportError: Failed to import test module: test_mayiQR
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_mayiQR.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import mayi_QR_page,login_page,landlord_nav_page,tenant_nav_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_mayiQR
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_mayiQR.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import mayi_QR_page,login_page,landlord_nav_page,tenant_nav_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.26' class='none'>
+    <td class='errorCase'><div class='testcase'>test_online_editdata_fydes</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.26')" >
+        error</a>
+
+    <div id='div_ft1.26' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.26').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.26: ImportError: Failed to import test module: test_online_editdata_fydes
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_online_editdata_fydes.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,fabu_room_page,landlord_online_editdata
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_online_editdata_fydes
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_online_editdata_fydes.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,fabu_room_page,landlord_online_editdata
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.27' class='none'>
+    <td class='errorCase'><div class='testcase'>test_online_editdata_fypic</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.27')" >
+        error</a>
+
+    <div id='div_ft1.27' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.27').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.27: ImportError: Failed to import test module: test_online_editdata_fypic
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_online_editdata_fypic.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,fabu_room_page,landlord_online_editdata
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_online_editdata_fypic
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_online_editdata_fypic.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,fabu_room_page,landlord_online_editdata
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.28' class='none'>
+    <td class='errorCase'><div class='testcase'>test_online_editdata_price</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.28')" >
+        error</a>
+
+    <div id='div_ft1.28' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.28').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.28: ImportError: Failed to import test module: test_online_editdata_price
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_online_editdata_price.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_online_editdata,fabu_room_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_online_editdata_price
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_online_editdata_price.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_online_editdata,fabu_room_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.29' class='none'>
+    <td class='errorCase'><div class='testcase'>test_tenant_account</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.29')" >
+        error</a>
+
+    <div id='div_ft1.29' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.29').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.29: ImportError: Failed to import test module: test_tenant_account
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_tenant_account.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,tenant_nav_page,tenant_accountmanager_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_tenant_account
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_tenant_account.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,tenant_nav_page,tenant_accountmanager_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.30' class='none'>
+    <td class='errorCase'><div class='testcase'>test_tenant_againorder</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.30')" >
+        error</a>
+
+    <div id='div_ft1.30' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.30').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.30: ImportError: Failed to import test module: test_tenant_againorder
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_tenant_againorder.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,tenant_nav_page,tenant_againorder_page,wujiaqu_order_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_tenant_againorder
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_tenant_againorder.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,tenant_nav_page,tenant_againorder_page,wujiaqu_order_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.31' class='none'>
+    <td class='errorCase'><div class='testcase'>test_tenant_collection</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.31')" >
+        error</a>
+
+    <div id='div_ft1.31' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.31').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.31: ImportError: Failed to import test module: test_tenant_collection
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_tenant_collection.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,tenant_nav_page,tenant_collection_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_tenant_collection
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_tenant_collection.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,tenant_nav_page,tenant_collection_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.32' class='none'>
+    <td class='errorCase'><div class='testcase'>test_tenant_msgmanage</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.32')" >
+        error</a>
+
+    <div id='div_ft1.32' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.32').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.32: ImportError: Failed to import test module: test_tenant_msgmanage
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_tenant_msgmanage.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,tenant_nav_page,tenant_msgmanage_page,landlord_msg_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_tenant_msgmanage
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_tenant_msgmanage.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import login_page,tenant_nav_page,tenant_msgmanage_page,landlord_msg_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.33' class='none'>
+    <td class='errorCase'><div class='testcase'>test_wujiaqu_order</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.33')" >
+        error</a>
+
+    <div id='div_ft1.33' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.33').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.33: ImportError: Failed to import test module: test_wujiaqu_order
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_wujiaqu_order.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import wujiaqu_order_page,login_page
+ModuleNotFoundError: No module named 'mayi'
+
+ImportError: Failed to import test module: test_wujiaqu_order
+Traceback (most recent call last):
+  File "C:\Python36\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python36\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\python\mayi\test_case\test_wujiaqu_order.py", line 10, in &lt;module&gt;
+    from mayi.test_case.page_obj import wujiaqu_order_page,login_page
+ModuleNotFoundError: No module named 'mayi'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='total_row'>
+    <td>Total</td>
+    <td>33</td>
+    <td>0</td>
+    <td>0</td>
+    <td>33</td>
+    <td>&nbsp;</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+
+</body>
+</html>

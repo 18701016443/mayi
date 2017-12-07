@@ -8,7 +8,7 @@
 @time: 2017/9/20 10:32
 """
 from .base import Pyse
-from mayi.models import mydef
+from models import mydef
 import os
 from time import sleep
 

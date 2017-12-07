@@ -8,8 +8,8 @@
 @time: 2017/9/19 14:17
 """
 import unittest,sys
-from mayi.test_case.page_obj import login_page
-from mayi.models import myunit,function
+from test_case.page_obj import login_page
+from models import myunit,function
 from time import sleep
 
 

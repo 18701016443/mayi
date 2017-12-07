@@ -8,7 +8,7 @@
 @time: 2017/9/20 16:59
 """
 from .base import Pyse
-from mayi.models import mydef
+from models import mydef
 
 class WujiaquOrderPage(Pyse):
     '''五家渠下订单'''

@@ -8,7 +8,7 @@
 @time: 2017/9/22 10:34
 """
 from .base import Pyse
-from mayi.models import mydef
+from models import mydef
 
 class LandlordOnlineEditdata(Pyse):
     '''已上线——修改资料'''

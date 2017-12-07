@@ -8,7 +8,7 @@
 @time: 2017/9/21 10:46
 """
 from .base import Pyse
-from mayi.models import mydef
+from models import mydef
 
 class LandlordConfirmPage(Pyse):
     '''待确认订单'''

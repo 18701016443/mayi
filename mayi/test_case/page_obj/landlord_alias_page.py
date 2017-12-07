@@ -8,7 +8,7 @@
 @time: 2017/9/21 20:07
 """
 from .base import Pyse
-from mayi.models import mydef
+from models import mydef
 
 class LandlordAliasPage(Pyse):
     '''房源管理-设置别名'''

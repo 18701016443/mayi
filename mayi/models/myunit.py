@@ -9,7 +9,7 @@
 """
 import unittest
 
-from mayi.models.driver import browser
+from models.driver import browser
 
 
 class MyTest(unittest.TestCase):

@@ -8,7 +8,7 @@
 @time: 2017/9/23 9:36
 """
 from .base import Pyse
-from mayi.models import mydef
+from models import mydef
 
 class LandlordExperiencePage(Pyse):
     '''特色体验'''

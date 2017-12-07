@@ -9,7 +9,7 @@
 """
 
 from .base import Pyse
-from mayi.models import mydef
+from models import mydef
 
 class LandlordMicroshopManagerPage(Pyse):
     '''房东微店'''

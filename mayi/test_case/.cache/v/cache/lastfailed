@@ -1,15 +1,3 @@
 {
-  "test_fabu_room.py::TestFabuRoom::test_fabu_room": true,
-  "test_landlord_read.py::TestLandlordRead::test_disclaimer": true,
-  "test_landlord_waitingcheckin.py::TestWaitingcheckin::test_return_myorder": true,
-  "test_landlord_waitingcheckin.py::TestWaitingcheckin::test_status": true,
-  "test_login.py::TestLogin": true,
-  "test_login.py::TestLogin::test_login": true,
-  "test_mayiQR.py::TestQR::test_APP50_andriodbtn": true,
-  "test_mayiQR.py::TestQR::test_order_banner_QR": true,
-  "test_mayiQR.py::TestQR::test_tenant_order_QR": true,
-  "test_online_editdata_fypic.py::TestEditdataFypic::test_setcover": true,
-  "test_tenant_account.py::TestTenantAccount::test_tenant_account": true,
-  "test_tenant_againorder.py::TestAgainOrder": true,
-  "test_wujiaqu_order.py::TestWujiaquOrder::test_wujiaqu_order": true
+  "test_fabu_room.py": true
 }

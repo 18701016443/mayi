@@ -8,7 +8,7 @@
 @time: 2017/9/22 16:29
 """
 from .base import Pyse
-from mayi.models import mydef
+from models import mydef
 
 class LandlordMsgPage(Pyse):
     '''消息通知'''

@@ -8,8 +8,8 @@
 @time: 2017/9/21 11:17
 """
 from time import sleep
-from mayi.models import myunit,function
-from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_confirm_page
+from models import myunit,function
+from test_case.page_obj import login_page,landlord_nav_page,landlord_confirm_page
 import unittest
 
 class TestLandlordConfiem(myunit.MyTest):

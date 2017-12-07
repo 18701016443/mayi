@@ -7,13 +7,22 @@
 @software: PyCharm
 @time: 2017/9/28 17:31
 """
-from mayi.test_case.page_obj import mayi_QR_page,login_page,landlord_nav_page,tenant_nav_page
-from mayi.models import jiexi_QR,myunit
+from test_case.page_obj import mayi_QR_page,login_page,landlord_nav_page,tenant_nav_page
+from models import jiexi_QR,myunit
 from selenium import webdriver
 from time import sleep
 import unittest
 
-class TestQR(myunit.MyTest):
+class TestQR(unittest.TestCase):
+
+    def setUp(self):
+        self.driver = webdriver.Chrome()
+        self.driver.maximize_window()
+
+
+    def tearDown(self):
+        self.driver.quit()
+
     '''二维码解析'''
 
     def login_online(self):
@@ -241,9 +250,9 @@ class TestQR(myunit.MyTest):
         '''14房客我的订单右侧二维码'''
         p = "房客我的订单右侧二维码"
         po = mayi_QR_page.MaYiQRPage(self.driver)
-        # po.opentest("http://www.mayi.com/")
-        # self.login_online()
-        # sleep(3)
+        po.opentest("http://www.mayi.com/")
+        self.login_online()
+        sleep(3)
         tenant_nav_page.TenantNavPage(self.driver).Iamtenant()
 
 

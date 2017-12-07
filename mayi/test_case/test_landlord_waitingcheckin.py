@@ -7,8 +7,8 @@
 @software: PyCharm
 @time: 2017/9/21 15:22
 """
-from mayi.models import myunit,function
-from mayi.test_case.page_obj import login_page,landlord_nav_page,landlord_waitingcheckin_page
+from models import myunit,function
+from test_case.page_obj import login_page,landlord_nav_page,landlord_waitingcheckin_page
 from time import sleep
 import unittest
 
